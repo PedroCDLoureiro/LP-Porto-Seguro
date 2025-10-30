@@ -1,0 +1,86 @@
+// Cores
+$primary-color: #033B74;
+$secondary-color: #DC2730;
+$tertiary-color: #38CEFF;
+$font-color: #333333;
+// Tamanhos de fonte
+$font-size-xsmall: 14px;
+$font-size-small: 16px;
+$font-size-base: 20px;
+$font-size-medium: 25px;
+$font-size-large: 40px;
+$font-size-xlarge: 48px;
+
+body {
+    font-family: Calibri, "Helvetica Neue", Arial, sans-serif;
+    color: $font-color;
+    font-size: $font-size-base;
+}
+.container-fluid{
+    padding: 0;
+}
+.btn {
+    font-size: $font-size-base;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 6px 18px;
+    width: max-content;
+    transition: all ease 0.3s;
+    &.btn-large {
+        font-size: $font-size-medium;
+        padding: 8px 32px;
+    }
+    &:hover {
+        letter-spacing: 2px;
+    }
+}
+.primary-btn {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    color: #FFF;
+    &:hover {
+        background-color: $secondary-color;
+        border-color: $secondary-color;
+        color: #FFF;
+    }
+}
+#banner{
+    height: 100dvh;
+    video{
+        position: absolute;
+        height: 100dvh;
+        z-index: -1;
+    }
+    .container{
+        height: 100%;
+        .content-banner{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            gap: 80px;
+            .logos{
+                gap: 60px;
+            }
+            h2, h3{
+                color: $primary-color;
+            }
+            h2{
+                font-size: $font-size-xlarge;
+            }
+            h3{
+                font-size: 30px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+// Mobile
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1180px;
+    }
+}
