@@ -47,6 +47,12 @@ section{
 .bg-primary{
     background-color: $primary-color !important;
 }
+.bg-secondary{
+    background-color: $secondary-color !important;
+}
+.bg-tertiary{
+    background-color: $tertiary-color !important;
+}
 h1,h2,h3{
     font-weight: bold;
 }
@@ -175,6 +181,67 @@ h3{
                 &:first-child{
                     font-size: 25px;
                     line-height: 36px;
+                }
+            }
+        }
+    }
+}
+
+// Trajetória IB DP
+
+#trajetoria-ibdp{
+    background-color: $primary-color;
+    background-image: url(assets/bg-trajetoria.png);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    .timeline{
+        border: 2px solid #DDDDDD;
+        border-radius: 8px;
+        .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .timeline-header{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            background-color: #DDDDDD;
+            gap: 2px;
+            border-radius: 6px 6px 0 0;
+            div{
+                background-color: #fff;
+                padding: 5px 10px;
+            }
+        }
+        .timeline-semestres{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            background-color: #DDDDDD;
+            gap: 2px;
+            div{
+                background-color: $primary-color;
+                padding: 20px 30px;
+            }
+        }
+        .timeline-conteudo{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            background-color: #DDDDDD;
+            gap: 2px;
+            font-size: $font-size-small;
+            line-height: $line-height-font-size-small;
+            font-weight: bold;
+            border-radius: 0 0 6px 6px;
+            div{
+                padding: 10px 15px;
+                &.bg-secondary {
+                    grid-column: 2 / span 4;
+                }
+                &:first-child{
+                    border-radius: 0 0 0 6px;
+                }
+                &:last-child{
+                    border-radius: 0 0 6px 0;
                 }
             }
         }

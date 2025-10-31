@@ -32,6 +32,14 @@ section:first-of-type {
   background-color: #033B74 !important;
 }
 
+.bg-secondary {
+  background-color: #DC2730 !important;
+}
+
+.bg-tertiary {
+  background-color: #38CEFF !important;
+}
+
 h1, h2, h3 {
   font-weight: bold;
 }
@@ -153,4 +161,63 @@ h3 {
 #aprendizado-ibdp .list:last-child p:first-child {
   font-size: 25px;
   line-height: 36px;
+}
+
+#trajetoria-ibdp {
+  background-color: #033B74;
+  background-image: url(assets/bg-trajetoria.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#trajetoria-ibdp .timeline {
+  border: 2px solid #DDDDDD;
+  border-radius: 8px;
+}
+#trajetoria-ibdp .timeline .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#trajetoria-ibdp .timeline .timeline-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #DDDDDD;
+  gap: 2px;
+  border-radius: 6px 6px 0 0;
+}
+#trajetoria-ibdp .timeline .timeline-header div {
+  background-color: #fff;
+  padding: 5px 10px;
+}
+#trajetoria-ibdp .timeline .timeline-semestres {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: #DDDDDD;
+  gap: 2px;
+}
+#trajetoria-ibdp .timeline .timeline-semestres div {
+  background-color: #033B74;
+  padding: 20px 30px;
+}
+#trajetoria-ibdp .timeline .timeline-conteudo {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: #DDDDDD;
+  gap: 2px;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: bold;
+  border-radius: 0 0 6px 6px;
+}
+#trajetoria-ibdp .timeline .timeline-conteudo div {
+  padding: 10px 15px;
+}
+#trajetoria-ibdp .timeline .timeline-conteudo div.bg-secondary {
+  grid-column: 2/span 4;
+}
+#trajetoria-ibdp .timeline .timeline-conteudo div:first-child {
+  border-radius: 0 0 0 6px;
+}
+#trajetoria-ibdp .timeline .timeline-conteudo div:last-child {
+  border-radius: 0 0 6px 0;
 }/*# sourceMappingURL=style.css.map */
