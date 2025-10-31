@@ -10,15 +10,68 @@ $font-size-base: 20px;
 $font-size-medium: 25px;
 $font-size-large: 40px;
 $font-size-xlarge: 48px;
+// Line Height
+$line-height-font-size-xsmall: 20px;
+$line-height-font-size-small: 23px;
+$line-height-font-size-base: 28px;
+$line-height-font-size-medium: 32px;
+$line-height-font-size-large: 56px;
+$line-height-font-size-xlarge: 70px;
+
+// Geral
 
 body {
     font-family: Calibri, "Helvetica Neue", Arial, sans-serif;
     color: $font-color;
     font-size: $font-size-base;
+    line-height: $line-height-font-size-base;
+}
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 90dvw;
 }
 .container-fluid{
     padding: 0;
 }
+section{
+    margin-top: 72px;
+    &:first-of-type{
+        margin-top: 0;
+    }
+}
+.font-primary{
+    color: $primary-color;
+}
+.text-primary{
+    color: $primary-color !important;
+}
+.bg-primary{
+    background-color: $primary-color !important;
+}
+h1,h2,h3{
+    font-weight: bold;
+}
+h1{
+    font-size: $font-size-xlarge;
+    line-height: $line-height-font-size-xlarge;
+}
+h2{
+    font-size: $font-size-large;
+    line-height: $line-height-font-size-large;
+}
+h3{
+    font-size: $font-size-medium;
+    line-height: $line-height-font-size-medium;
+}
+.fsz-normal{
+    font-size: $font-size-small;
+    line-height: $line-height-font-size-small;
+}
+.icon-circle{
+    margin-right: 8px;
+}
+
+// Botões
+
 .btn {
     font-size: $font-size-base;
     text-decoration: none;
@@ -46,6 +99,9 @@ body {
         color: #FFF;
     }
 }
+
+// Banner
+
 #banner{
     height: 100dvh;
     video{
@@ -63,24 +119,64 @@ body {
             .logos{
                 gap: 60px;
             }
-            h2, h3{
-                color: $primary-color;
-            }
             h2{
-                font-size: $font-size-xlarge;
-            }
-            h3{
-                font-size: 30px;
-                line-height: 30px;
+                font-size: 32px;
+                line-height: 32px;
             }
         }
     }
 }
 
-// Mobile
+// International Baccalaureate
 
-@media (min-width: 1200px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl {
-        max-width: 1180px;
+#international-baccalaureate{
+    #cards-ib{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 60px;
+        .card{
+            border: 1px solid #DDDDDD;
+            border-radius: 8px;
+            padding: 15px;
+            gap: 15px;
+            justify-content: space-between;
+            p{
+                margin: 0;
+            }
+        }
+    }
+}
+
+// IB DP
+
+#ibdp{
+    background-image: url('assets/bg-ibdp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    .texts{
+        width: 50%;
+    }
+}
+
+// Aprendizado IB DP
+
+#aprendizado-ibdp{
+    h2{
+        margin-bottom: 100px;
+    }
+    .list{
+        &:first-child{
+            padding-right: 30px;
+        }
+        &:last-child{
+            padding-left: 30px;
+            border-left: 2px solid $secondary-color;
+            p{
+                &:first-child{
+                    font-size: 25px;
+                    line-height: 36px;
+                }
+            }
+        }
     }
 }

@@ -2,10 +2,62 @@ body {
   font-family: Calibri, "Helvetica Neue", Arial, sans-serif;
   color: #333333;
   font-size: 20px;
+  line-height: 28px;
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+  max-width: 90dvw;
 }
 
 .container-fluid {
   padding: 0;
+}
+
+section {
+  margin-top: 72px;
+}
+section:first-of-type {
+  margin-top: 0;
+}
+
+.font-primary {
+  color: #033B74;
+}
+
+.text-primary {
+  color: #033B74 !important;
+}
+
+.bg-primary {
+  background-color: #033B74 !important;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 70px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 56px;
+}
+
+h3 {
+  font-size: 25px;
+  line-height: 32px;
+}
+
+.fsz-normal {
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.icon-circle {
+  margin-right: 8px;
 }
 
 .btn {
@@ -58,19 +110,47 @@ body {
 #banner .container .content-banner .logos {
   gap: 60px;
 }
-#banner .container .content-banner h2, #banner .container .content-banner h3 {
-  color: #033B74;
-}
 #banner .container .content-banner h2 {
-  font-size: 48px;
-}
-#banner .container .content-banner h3 {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 32px;
+  line-height: 32px;
 }
 
-@media (min-width: 1200px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1180px;
-  }
+#international-baccalaureate #cards-ib {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+}
+#international-baccalaureate #cards-ib .card {
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+  padding: 15px;
+  gap: 15px;
+  justify-content: space-between;
+}
+#international-baccalaureate #cards-ib .card p {
+  margin: 0;
+}
+
+#ibdp {
+  background-image: url("assets/bg-ibdp.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+#ibdp .texts {
+  width: 50%;
+}
+
+#aprendizado-ibdp h2 {
+  margin-bottom: 100px;
+}
+#aprendizado-ibdp .list:first-child {
+  padding-right: 30px;
+}
+#aprendizado-ibdp .list:last-child {
+  padding-left: 30px;
+  border-left: 2px solid #DC2730;
+}
+#aprendizado-ibdp .list:last-child p:first-child {
+  font-size: 25px;
+  line-height: 36px;
 }/*# sourceMappingURL=style.css.map */
