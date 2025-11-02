@@ -68,6 +68,17 @@ h3 {
   margin-right: 8px;
 }
 
+.card {
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+  padding: 15px;
+  gap: 20px;
+  justify-content: space-between;
+}
+.card p {
+  margin: 0;
+}
+
 .btn {
   font-size: 20px;
   text-decoration: none;
@@ -126,16 +137,6 @@ h3 {
 #international-baccalaureate #cards-ib {
   grid-template-columns: repeat(4, 1fr);
   gap: 60px;
-}
-#international-baccalaureate #cards-ib .card {
-  border: 1px solid #DDDDDD;
-  border-radius: 8px;
-  padding: 15px;
-  gap: 15px;
-  justify-content: space-between;
-}
-#international-baccalaureate #cards-ib .card p {
-  margin: 0;
 }
 
 #ibdp {
@@ -220,4 +221,12 @@ h3 {
 }
 #trajetoria-ibdp .timeline .timeline-conteudo div:last-child {
   border-radius: 0 0 6px 0;
+}
+
+#habilidades-para-a-vida #cards-habilidades {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+#habilidades-para-a-vida #cards-habilidades .card p {
+  line-height: 20px;
 }/*# sourceMappingURL=style.css.map */
