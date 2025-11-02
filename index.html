@@ -1,286 +1,407 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Porto Seguro</title>
-    <link rel="icon" type="image/png" href="assets/icon.png">
-    <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
-    crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Porto Seguro</title>
+        <link rel="icon" type="image/png" href="assets/icon.png">
+        <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+        crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
 
-</head>
-<body>
-    <section id="banner">
-        <div id="content-banner" class="container-fluid d-flex justify-content-end">
-            <video 
-            src="assets/Capa_Video_Aquarela.mp4" 
-            poster="assets/Capa_Video_Aquarela_PosterImage.png"  
-            autoplay 
-            muted 
-            loop
-            playsinline>
-            Seu navegador não suporta a tag de vídeo.
-            </video>
+    </head>
+    <body>
+        <section id="banner">
+            <div id="content-banner" class="container-fluid d-flex justify-content-end">
+                <video 
+                src="assets/Capa_Video_Aquarela.mp4" 
+                poster="assets/Capa_Video_Aquarela_PosterImage.png"  
+                autoplay 
+                muted 
+                loop
+                playsinline>
+                Seu navegador não suporta a tag de vídeo.
+                </video>
+                <div class="container">
+                    <div class="col-6 d-flex flex-column content-banner">
+                        <div class="d-flex logos">
+                            <img src="assets/Logo.svg" alt="Logo Porto Seguro">
+                            <img src="assets/ib-world-school-logo-1-colour.png" alt="Logo IB World School">
+                        </div>
+                        <div class="textos d-flex flex-column gap-4">
+                            <div class="top">
+                                <h1 class="text-primary fw-normal">Agora IB World School</h1>
+                                <h2 class="text-primary fw-normal">A tradição do Porto Seguro <br> conectada ao futuro global.</h2>
+                            </div>
+                            <div class="button">
+                                <a href="#converse-com-a-equipe" class="btn btn-large primary-btn">Quero saber mais sobre o IB Porto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <p class="text-primary fsz-normal mt-4">O Diploma Programme do International Baccalaureate® (IB DP) é oferecido exclusivamente no Campus Panamby. Nos campi Morumbi e Valinhos, o Colégio Porto Seguro oferece o Currículo Internacional Alemão.</p>
+        </div>
+        <section id="international-baccalaureate">
             <div class="container">
-                <div class="col-6 d-flex flex-column content-banner">
-                    <div class="d-flex logos">
-                        <img src="assets/Logo.svg" alt="Logo Porto Seguro">
-                        <img src="assets/ib-world-school-logo-1-colour.png" alt="Logo IB World School">
+                <h2 class="text-center text-primary">O que é o International Baccalaureate® (IB)?</h2>
+                <div id="cards-ib" class="d-grid mt-5">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="82" height="72" viewBox="0 0 82 72"><path d="M80.645,44.875,42.207,24.3a2.555,2.555,0,0,0-2.409,0L1.36,44.875a2.576,2.576,0,0,0,0,4.539l8.892,4.76V69.737a5.124,5.124,0,0,0,1.3,3.423c4.2,4.69,13.6,12.555,29.45,12.555A41.514,41.514,0,0,0,56.378,82.9V93.43a2.563,2.563,0,1,0,5.125,0V80.415a37.063,37.063,0,0,0,8.95-7.255,5.124,5.124,0,0,0,1.3-3.423V54.174l8.892-4.76a2.576,2.576,0,0,0,0-4.539ZM41,80.573c-13.86,0-22.012-6.8-25.625-10.835V56.915L39.8,69.985a2.555,2.555,0,0,0,2.409,0L56.378,62.4V77.3A35.839,35.839,0,0,1,41,80.573ZM66.628,69.724A31.373,31.373,0,0,1,61.5,74.3V59.657l5.125-2.742ZM60.222,54.518l-.07-.042-17.938-9.6A2.569,2.569,0,0,0,39.8,49.414L54.776,57.43,41,64.8,8.01,47.144,41,29.488,74,47.144Z" transform="translate(-0.002 -24.001)" fill="#38ceff"/></svg>
+                        <p>Programa educacional internacional com mais de 50 anos de história.</p>
                     </div>
-                    <div class="textos d-flex flex-column gap-4">
-                        <div class="top">
-                            <h1 class="text-primary fw-normal">Agora IB World School</h1>
-                            <h2 class="text-primary fw-normal">A tradição do Porto Seguro <br> conectada ao futuro global.</h2>
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M60,24h0A36,36,0,1,0,96,60,36,36,0,0,0,60,24ZM90.462,60a30.326,30.326,0,0,1-1.153,8.308H75.978a54.5,54.5,0,0,0,0-16.615h13.33A30.326,30.326,0,0,1,90.462,60ZM51,73.846H69a39.846,39.846,0,0,1-9,15.577,39.9,39.9,0,0,1-9-15.577Zm-1.35-5.538a48.752,48.752,0,0,1,0-16.615H70.378a48.752,48.752,0,0,1,0,16.615ZM29.538,60a30.326,30.326,0,0,1,1.153-8.308h13.33a54.5,54.5,0,0,0,0,16.615H30.691A30.326,30.326,0,0,1,29.538,60ZM69,46.154H51a39.846,39.846,0,0,1,9-15.577,39.9,39.9,0,0,1,9,15.577Zm18.114,0H74.784a46.828,46.828,0,0,0-7.719-15.785A30.562,30.562,0,0,1,87.128,46.154ZM52.935,30.369a46.828,46.828,0,0,0-7.719,15.785H32.872A30.562,30.562,0,0,1,52.935,30.369ZM32.872,73.846H45.216a46.828,46.828,0,0,0,7.719,15.785A30.562,30.562,0,0,1,32.872,73.846ZM67.065,89.631a46.828,46.828,0,0,0,7.719-15.785H87.128A30.562,30.562,0,0,1,67.065,89.631Z" transform="translate(-24 -24)" fill="#38ceff"/></svg>
+                        <p>Presente em mais de 5.600 escolas em 160 países.</p>
+                    </div>
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="75" height="72" viewBox="0 0 75 72"><path d="M20.87,2A55.217,55.217,0,0,0,3.809,5.272l-1.618.613v53.1L2,59.257H41.339l-1.98-1.964-5.475-5.45A50.393,50.393,0,0,0,20.87,49.853,53.065,53.065,0,0,0,7.006,52.022V9.381a50.255,50.255,0,0,1,13.864-2.4A48.293,48.293,0,0,1,34.539,9.386V20.068l5.006.992V9.386A48.145,48.145,0,0,1,53.214,6.979a50.254,50.254,0,0,1,13.864,2.4V43.3l4.815,4.789V5.885l-1.618-.613A55.217,55.217,0,0,0,53.214,2,54.361,54.361,0,0,0,37.042,4.956,54.361,54.361,0,0,0,20.87,2Zm5.06,21.2,3.5,17.382.538.53,32.065,31.9L63.451,71.6l.132.126a7.941,7.941,0,0,0,11.127,0l0,0a7.84,7.84,0,0,0,0-11.066l-.132-.131,1.427-1.42L43.4,26.685ZM35.3,30.147,40,31.085l-1.12,5L33.855,37.2l-.944-4.682Zm9.034,4.5L62.165,52.377l-6.9,6.865L37.438,41.51l5.642-1.25ZM65.7,55.9l3.227,3.209-6.9,6.865L58.8,62.762Zm5.338,8.149.132.131a2.679,2.679,0,0,1,0,4.021,2.717,2.717,0,0,1-4.053,0L67,68.072Z" transform="translate(-2 -2)" fill="#38ceff"/></svg>
+                        <p>Foco em pensamento crítico, habilidades para a vida, plurilinguismo e formação ética.</p>
+                    </div>
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70.896" height="72" viewBox="0 0 70.896 72"><path d="M56.5,3.973a7.015,7.015,0,0,0-4.434,1.963c-.011.011-.018.024-.029.035L37.1,20.9c-.011.011-.018.024-.029.035L5.847,52.157c-2.284,2.284-2.154,5.574-1.209,8.407a21.75,21.75,0,0,0,5.378,8.269,21.722,21.722,0,0,0,8.269,5.378c2.833.944,6.123,1.074,8.407-1.209L42.48,57.212a32.746,32.746,0,0,1,.489,11.9l-.749,6.846L53.19,67.565,62.967,74.8v-5.85c0-10.25-1.152-19.35-5.056-27.167l.035-.029v-.006L72.912,26.781a6.988,6.988,0,0,0,1.963-4.428,10.377,10.377,0,0,0-.777-4.445,23.16,23.16,0,0,0-5.355-7.8,23.142,23.142,0,0,0-7.8-5.349A10.381,10.381,0,0,0,56.5,3.973Zm.392,5.885a4.933,4.933,0,0,1,1.935.392,18.437,18.437,0,0,1,5.752,4.025A18.436,18.436,0,0,1,68.6,20.027a4.933,4.933,0,0,1,.392,1.935c-.027.4-.074.477-.248.651s-.252.227-.651.253a4.958,4.958,0,0,1-1.94-.392,18.448,18.448,0,0,1-5.747-4.031A18.448,18.448,0,0,1,56.374,12.7a4.933,4.933,0,0,1-.392-1.935.793.793,0,0,1,.213-.61l.04-.04-.006-.006C56.4,9.932,56.488,9.884,56.887,9.858Zm-5.8,5.4a23.545,23.545,0,0,0,5.142,7.353A23.586,23.586,0,0,0,63.6,27.765l-9.817,9.817h-.006c-.016.013-.685.345-2.378-.219a16.5,16.5,0,0,1-5.96-3.95,16.54,16.54,0,0,1-3.95-5.965c-.562-1.684-.235-2.344-.219-2.367ZM36.227,30.12a22.226,22.226,0,0,0,5.038,7.462,22.2,22.2,0,0,0,7.462,5.044L43.35,48.005c-.01.01-.677.354-2.378-.213a16.522,16.522,0,0,1-5.96-3.956,16.525,16.525,0,0,1-3.95-5.96c-.564-1.693-.232-2.362-.219-2.378ZM25.8,40.548a22.249,22.249,0,0,0,5.044,7.457,22.2,22.2,0,0,0,7.457,5.05L22.523,68.832c-.01.01-.677.348-2.378-.219a16.506,16.506,0,0,1-5.96-3.95,16.525,16.525,0,0,1-3.95-5.96c-.567-1.7-.229-2.368-.219-2.378Zm27.6,5.747c1.877,4.778,2.734,10.3,3.127,16.393l-3.391-2.5-4.376,3.345a29.723,29.723,0,0,0-1.75-10.842Z" transform="translate(-3.997 -3.955)" fill="#38ceff"/></svg>
+                        <p>O <i>Diploma Programme</i> (DP) é amplamente reconhecido e valorizado nos processos seletivos das universidades mais prestigiadas do mundo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ibdp">
+            <div class="container-fluid">
+                <div class="container pt-5 pb-4">
+                    <h2 class="text-white mb-4">Por que o Colégio Porto Seguro escolheu o IB DP?</h2>
+                    <div class="texts">
+                        <p class="text-white mb-4">O Diploma Programme do International Baccalaureate® (IB DP) está alinhado aos princípios já vivenciados na trajetória do Porto: excelência acadêmica, educação plurilíngue, mentalidade global, protagonismo do aluno e valores éticos solidários.</p>
+                        <h3 class="text-white mb-2">Diferenciais do Porto com o IB DP:</h3>
+                        <p class="text-white"><span class="icon-circle">●</span> Tradição educacional com certificação internacional </p>
+                        <p class="text-white"><span class="icon-circle">●</span> Equipe docente altamente qualificada e certificada </p>
+                        <p class="text-white"><span class="icon-circle">●</span> Professores expatriados e brasileiros </p>
+                        <p class="text-white"><span class="icon-circle">●</span> Assessoria em processo de admissão em faculdades no exterior </p>
+                        <p class="text-white"><span class="icon-circle">●</span> Infraestrutura a serviço da aprendizagem </p>
+                        <p class="text-white"><span class="icon-circle">●</span> Aceito por universidades internacionais e brasileiras</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="aprendizado-ibdp">
+            <div class="container">
+                <h2 class="text-center text-primary">O que seu filho aprende no IB DP?</h2>
+                <div class="row">
+                    <div class="col-md-6 col-12 list">
+                        <p class="fw-bold">O IB DP é oferecido no Ensino Médio e está estruturado em Seis grupos de disciplinas, cada uma com duas opções de nível: padrão (SL – Standard Level) ou avançado (HL – Higher Level):</p>
+                        <p><span class="icon-circle">●</span> Estudos de Língua e Literatura </p>
+                        <p><span class="icon-circle">●</span> Aquisição de Línguas </p>
+                        <p><span class="icon-circle">●</span> Indivíduos e Sociedades </p>
+                        <p><span class="icon-circle">●</span> Ciências </p>
+                        <p><span class="icon-circle">●</span> Matemática </p>
+                        <p><span class="icon-circle">●</span> Artes</p>
+                    </div>
+                    <div class="col-md-6 col-12 list">
+                        <p class="fw-bold">Três componentes centrais:</p>
+                        <p><span class="icon-circle">●</span> Theory of Knowledge (Teoria do Conhecimento) – pensamento crítico e interdisciplinar</p>
+                        <p><span class="icon-circle">●</span> Creativity, Activity, Service (CAS) – desenvolvimento pessoal e social</p>
+                        <p><span class="icon-circle">●</span> Extended Essay (Monografia) – projeto de pesquisa individual com orientação docente</p>
+                    </div>
+                </div>
+                <p class="text-center mt-4">Cada aluno escolhe três disciplinas no nível avançado (HL) e cursa as demais no nível padrão (SL).</p>
+            </div>
+        </section>
+        <section id="trajetoria-ibdp">
+            <div class="container-fluid">
+                <div class="container py-5">
+                    <h2 class="text-center text-white mt-2 mb-5">A trajetória do IB DP no Porto</h2>
+                    <div class="text-white text-center timeline">
+                        <div class="text-primary fw-bold timeline-header">
+                            <div>1ª série do Ensino Médio (10th grade)</div>
+                            <div>2ª série do Ensino Médio (11th grade)</div>
+                            <div>3ª série do Ensino Médio (12th grade)</div>
                         </div>
-                        <div class="button">
-                            <a href="#converse-com-a-equipe" class="btn btn-large primary-btn">Quero saber mais sobre o IB Porto</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="container">
-        <p class="text-primary fsz-normal mt-4">O Diploma Programme do International Baccalaureate® (IB DP) é oferecido exclusivamente no Campus Panamby. Nos campi Morumbi e Valinhos, o Colégio Porto Seguro oferece o Currículo Internacional Alemão.</p>
-    </div>
-    <section id="international-baccalaureate">
-        <div class="container">
-            <h2 class="text-center text-primary">O que é o International Baccalaureate® (IB)?</h2>
-            <div id="cards-ib" class="d-grid mt-5">
-                <div class="card">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="82" height="72" viewBox="0 0 82 72"><path d="M80.645,44.875,42.207,24.3a2.555,2.555,0,0,0-2.409,0L1.36,44.875a2.576,2.576,0,0,0,0,4.539l8.892,4.76V69.737a5.124,5.124,0,0,0,1.3,3.423c4.2,4.69,13.6,12.555,29.45,12.555A41.514,41.514,0,0,0,56.378,82.9V93.43a2.563,2.563,0,1,0,5.125,0V80.415a37.063,37.063,0,0,0,8.95-7.255,5.124,5.124,0,0,0,1.3-3.423V54.174l8.892-4.76a2.576,2.576,0,0,0,0-4.539ZM41,80.573c-13.86,0-22.012-6.8-25.625-10.835V56.915L39.8,69.985a2.555,2.555,0,0,0,2.409,0L56.378,62.4V77.3A35.839,35.839,0,0,1,41,80.573ZM66.628,69.724A31.373,31.373,0,0,1,61.5,74.3V59.657l5.125-2.742ZM60.222,54.518l-.07-.042-17.938-9.6A2.569,2.569,0,0,0,39.8,49.414L54.776,57.43,41,64.8,8.01,47.144,41,29.488,74,47.144Z" transform="translate(-0.002 -24.001)" fill="#38ceff"/></svg>
-                    <p>Programa educacional internacional com mais de 50 anos de história.</p>
-                </div>
-                <div class="card">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M60,24h0A36,36,0,1,0,96,60,36,36,0,0,0,60,24ZM90.462,60a30.326,30.326,0,0,1-1.153,8.308H75.978a54.5,54.5,0,0,0,0-16.615h13.33A30.326,30.326,0,0,1,90.462,60ZM51,73.846H69a39.846,39.846,0,0,1-9,15.577,39.9,39.9,0,0,1-9-15.577Zm-1.35-5.538a48.752,48.752,0,0,1,0-16.615H70.378a48.752,48.752,0,0,1,0,16.615ZM29.538,60a30.326,30.326,0,0,1,1.153-8.308h13.33a54.5,54.5,0,0,0,0,16.615H30.691A30.326,30.326,0,0,1,29.538,60ZM69,46.154H51a39.846,39.846,0,0,1,9-15.577,39.9,39.9,0,0,1,9,15.577Zm18.114,0H74.784a46.828,46.828,0,0,0-7.719-15.785A30.562,30.562,0,0,1,87.128,46.154ZM52.935,30.369a46.828,46.828,0,0,0-7.719,15.785H32.872A30.562,30.562,0,0,1,52.935,30.369ZM32.872,73.846H45.216a46.828,46.828,0,0,0,7.719,15.785A30.562,30.562,0,0,1,32.872,73.846ZM67.065,89.631a46.828,46.828,0,0,0,7.719-15.785H87.128A30.562,30.562,0,0,1,67.065,89.631Z" transform="translate(-24 -24)" fill="#38ceff"/></svg>
-                    <p>Presente em mais de 5.600 escolas em 160 países.</p>
-                </div>
-                <div class="card">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="75" height="72" viewBox="0 0 75 72"><path d="M20.87,2A55.217,55.217,0,0,0,3.809,5.272l-1.618.613v53.1L2,59.257H41.339l-1.98-1.964-5.475-5.45A50.393,50.393,0,0,0,20.87,49.853,53.065,53.065,0,0,0,7.006,52.022V9.381a50.255,50.255,0,0,1,13.864-2.4A48.293,48.293,0,0,1,34.539,9.386V20.068l5.006.992V9.386A48.145,48.145,0,0,1,53.214,6.979a50.254,50.254,0,0,1,13.864,2.4V43.3l4.815,4.789V5.885l-1.618-.613A55.217,55.217,0,0,0,53.214,2,54.361,54.361,0,0,0,37.042,4.956,54.361,54.361,0,0,0,20.87,2Zm5.06,21.2,3.5,17.382.538.53,32.065,31.9L63.451,71.6l.132.126a7.941,7.941,0,0,0,11.127,0l0,0a7.84,7.84,0,0,0,0-11.066l-.132-.131,1.427-1.42L43.4,26.685ZM35.3,30.147,40,31.085l-1.12,5L33.855,37.2l-.944-4.682Zm9.034,4.5L62.165,52.377l-6.9,6.865L37.438,41.51l5.642-1.25ZM65.7,55.9l3.227,3.209-6.9,6.865L58.8,62.762Zm5.338,8.149.132.131a2.679,2.679,0,0,1,0,4.021,2.717,2.717,0,0,1-4.053,0L67,68.072Z" transform="translate(-2 -2)" fill="#38ceff"/></svg>
-                    <p>Foco em pensamento crítico, habilidades para a vida, plurilinguismo e formação ética.</p>
-                </div>
-                <div class="card">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="70.896" height="72" viewBox="0 0 70.896 72"><path d="M56.5,3.973a7.015,7.015,0,0,0-4.434,1.963c-.011.011-.018.024-.029.035L37.1,20.9c-.011.011-.018.024-.029.035L5.847,52.157c-2.284,2.284-2.154,5.574-1.209,8.407a21.75,21.75,0,0,0,5.378,8.269,21.722,21.722,0,0,0,8.269,5.378c2.833.944,6.123,1.074,8.407-1.209L42.48,57.212a32.746,32.746,0,0,1,.489,11.9l-.749,6.846L53.19,67.565,62.967,74.8v-5.85c0-10.25-1.152-19.35-5.056-27.167l.035-.029v-.006L72.912,26.781a6.988,6.988,0,0,0,1.963-4.428,10.377,10.377,0,0,0-.777-4.445,23.16,23.16,0,0,0-5.355-7.8,23.142,23.142,0,0,0-7.8-5.349A10.381,10.381,0,0,0,56.5,3.973Zm.392,5.885a4.933,4.933,0,0,1,1.935.392,18.437,18.437,0,0,1,5.752,4.025A18.436,18.436,0,0,1,68.6,20.027a4.933,4.933,0,0,1,.392,1.935c-.027.4-.074.477-.248.651s-.252.227-.651.253a4.958,4.958,0,0,1-1.94-.392,18.448,18.448,0,0,1-5.747-4.031A18.448,18.448,0,0,1,56.374,12.7a4.933,4.933,0,0,1-.392-1.935.793.793,0,0,1,.213-.61l.04-.04-.006-.006C56.4,9.932,56.488,9.884,56.887,9.858Zm-5.8,5.4a23.545,23.545,0,0,0,5.142,7.353A23.586,23.586,0,0,0,63.6,27.765l-9.817,9.817h-.006c-.016.013-.685.345-2.378-.219a16.5,16.5,0,0,1-5.96-3.95,16.54,16.54,0,0,1-3.95-5.965c-.562-1.684-.235-2.344-.219-2.367ZM36.227,30.12a22.226,22.226,0,0,0,5.038,7.462,22.2,22.2,0,0,0,7.462,5.044L43.35,48.005c-.01.01-.677.354-2.378-.213a16.522,16.522,0,0,1-5.96-3.956,16.525,16.525,0,0,1-3.95-5.96c-.564-1.693-.232-2.362-.219-2.378ZM25.8,40.548a22.249,22.249,0,0,0,5.044,7.457,22.2,22.2,0,0,0,7.457,5.05L22.523,68.832c-.01.01-.677.348-2.378-.219a16.506,16.506,0,0,1-5.96-3.95,16.525,16.525,0,0,1-3.95-5.96c-.567-1.7-.229-2.368-.219-2.378Zm27.6,5.747c1.877,4.778,2.734,10.3,3.127,16.393l-3.391-2.5-4.376,3.345a29.723,29.723,0,0,0-1.75-10.842Z" transform="translate(-3.997 -3.955)" fill="#38ceff"/></svg>
-                    <p>O <i>Diploma Programme</i> (DP) é amplamente reconhecido e valorizado nos processos seletivos das universidades mais prestigiadas do mundo.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="ibdp">
-        <div class="container-fluid">
-            <div class="container pt-5 pb-4">
-                <h2 class="text-white mb-4">Por que o Colégio Porto Seguro escolheu o IB DP?</h2>
-                <div class="texts">
-                    <p class="text-white mb-4">O Diploma Programme do International Baccalaureate® (IB DP) está alinhado aos princípios já vivenciados na trajetória do Porto: excelência acadêmica, educação plurilíngue, mentalidade global, protagonismo do aluno e valores éticos solidários.</p>
-                    <h3 class="text-white mb-2">Diferenciais do Porto com o IB DP:</h3>
-                    <p class="text-white"><span class="icon-circle">●</span> Tradição educacional com certificação internacional </p>
-                    <p class="text-white"><span class="icon-circle">●</span> Equipe docente altamente qualificada e certificada </p>
-                    <p class="text-white"><span class="icon-circle">●</span> Professores expatriados e brasileiros </p>
-                    <p class="text-white"><span class="icon-circle">●</span> Assessoria em processo de admissão em faculdades no exterior </p>
-                    <p class="text-white"><span class="icon-circle">●</span> Infraestrutura a serviço da aprendizagem </p>
-                    <p class="text-white"><span class="icon-circle">●</span> Aceito por universidades internacionais e brasileiras</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="aprendizado-ibdp">
-        <div class="container">
-            <h2 class="text-center text-primary">O que seu filho aprende no IB DP?</h2>
-            <div class="row">
-                <div class="col-md-6 col-12 list">
-                    <p class="fw-bold">O IB DP é oferecido no Ensino Médio e está estruturado em Seis grupos de disciplinas, cada uma com duas opções de nível: padrão (SL – Standard Level) ou avançado (HL – Higher Level):</p>
-                    <p><span class="icon-circle">●</span> Estudos de Língua e Literatura </p>
-                    <p><span class="icon-circle">●</span> Aquisição de Línguas </p>
-                    <p><span class="icon-circle">●</span> Indivíduos e Sociedades </p>
-                    <p><span class="icon-circle">●</span> Ciências </p>
-                    <p><span class="icon-circle">●</span> Matemática </p>
-                    <p><span class="icon-circle">●</span> Artes</p>
-                </div>
-                <div class="col-md-6 col-12 list">
-                    <p class="fw-bold">Três componentes centrais:</p>
-                    <p><span class="icon-circle">●</span> Theory of Knowledge (Teoria do Conhecimento) – pensamento crítico e interdisciplinar</p>
-                    <p><span class="icon-circle">●</span> Creativity, Activity, Service (CAS) – desenvolvimento pessoal e social</p>
-                    <p><span class="icon-circle">●</span> Extended Essay (Monografia) – projeto de pesquisa individual com orientação docente</p>
-                </div>
-            </div>
-            <p class="text-center mt-4">Cada aluno escolhe três disciplinas no nível avançado (HL) e cursa as demais no nível padrão (SL).</p>
-        </div>
-    </section>
-    <section id="trajetoria-ibdp">
-        <div class="container-fluid">
-            <div class="container py-5">
-                <h2 class="text-center text-white mt-2 mb-5">A trajetória do IB DP no Porto</h2>
-                <div class="text-white text-center timeline">
-                    <div class="text-primary fw-bold timeline-header">
-                        <div>1ª série do Ensino Médio (10th grade)</div>
-                        <div>2ª série do Ensino Médio (11th grade)</div>
-                        <div>3ª série do Ensino Médio (12th grade)</div>
-                    </div>
-                    <div class="timeline-semestres">
-                        <div>1º semestre</div>
-                        <div>2º semestre</div>
-                        <div>1º semestre</div>
-                        <div>2º semestre</div>
-                        <div>1º semestre</div>
-                        <div>2º semestre</div>
-                    </div>
-
-                    <div class="timeline-conteudo">
-                        <div class="item bg-tertiary">
-                            PREPARATÓRIO IB<br>+<br>REQUISITOS DA BNCC
+                        <div class="timeline-semestres">
+                            <div>1º semestre</div>
+                            <div>2º semestre</div>
+                            <div>1º semestre</div>
+                            <div>2º semestre</div>
+                            <div>1º semestre</div>
+                            <div>2º semestre</div>
                         </div>
 
-                        <div class="item bg-secondary">
-                            IB DIPLOMA PROGRAMME
-                        </div>
+                        <div class="timeline-conteudo">
+                            <div class="item bg-tertiary">
+                                PREPARATÓRIO IB<br>+<br>REQUISITOS DA BNCC
+                            </div>
 
-                        <div class="item bg-tertiary">
-                            PREPARAÇÃO PARA<br>CANDIDATURA NO<br>EXTERIOR E/OU<br>VESTIBULAR NO BRASIL<br>+ REQUISITOS DA BNCC
+                            <div class="item bg-secondary">
+                                IB DIPLOMA PROGRAMME
+                            </div>
+
+                            <div class="item bg-tertiary">
+                                PREPARAÇÃO PARA<br>CANDIDATURA NO<br>EXTERIOR E/OU<br>VESTIBULAR NO BRASIL<br>+ REQUISITOS DA BNCC
+                            </div>
                         </div>
                     </div>
+                    <div class="col-md-10 offset-md-1 col-12">
+                        <p class="fsz-normal text-white mt-5">
+                            No primeiro semestre da 1ª série do Ensino Médio, os alunos têm como foco o desenvolvimento de habilidades-chave e dos atributos do Perfil do Aluno IB DP por meio de conhecimentos interdisciplinares, projetos colaborativos e experiências práticas de aprendizagem. Ao mesmo tempo, seguem cumprindo as exigências do Ensino Médio brasileiro.
+                        </p>
+                        <p class="fsz-normal text-white mt-4">
+                            No último semestre da 3ª série do Ensino Médio, o foco está na preparação para candidaturas a universidades no exterior e/ou vestibulares no Brasil, além da continuidade do processo de aprendizagem. Esse período garante que os estudantes concluam as exigências da Base Nacional Comum Curricular (BNCC) enquanto finalizam os requisitos do IB DP, consolidando assim a dupla certificação.
+                        </p>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <section id="habilidades-para-a-vida">
+            <div class="container">
                 <div class="col-md-10 offset-md-1 col-12">
-                    <p class="fsz-normal text-white mt-5">
-                        No primeiro semestre da 1ª série do Ensino Médio, os alunos têm como foco o desenvolvimento de habilidades-chave e dos atributos do Perfil do Aluno IB DP por meio de conhecimentos interdisciplinares, projetos colaborativos e experiências práticas de aprendizagem. Ao mesmo tempo, seguem cumprindo as exigências do Ensino Médio brasileiro.
-                    </p>
-                    <p class="fsz-normal text-white mt-4">
-                        No último semestre da 3ª série do Ensino Médio, o foco está na preparação para candidaturas a universidades no exterior e/ou vestibulares no Brasil, além da continuidade do processo de aprendizagem. Esse período garante que os estudantes concluam as exigências da Base Nacional Comum Curricular (BNCC) enquanto finalizam os requisitos do IB DP, consolidando assim a dupla certificação.
-                    </p>
+                    <h2 class="text-center text-primary mb-4">Muito além do conteúdo: habilidades para a vida</h2>
+                    <p>As Abordagens de Aprendizagem (Approaches to Learning – ATLs) estão presentes em todas as áreas do conhecimento, atravessam todas as disciplinas e preparam os estudantes para um mundo em constante transformação.</p>
+                    <p>O programa desenvolve cinco grandes competências formativas:</p>
+                    <div id="cards-habilidades" class="d-grid">
+                        <div class="card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40.711" height="40" viewBox="0 0 40.711 40"><g transform="translate(0)"><path d="M-.75-.75H8.708V12.1H-.75ZM6.041,1.917H1.917v7.52H6.041Z" transform="translate(2.794 27.897)" fill="#38ceff"/><path d="M-.75-.75H8.708V25.668H-.75ZM6.041,1.917H1.917V23H6.041Z" transform="translate(29.959 14.332)" fill="#38ceff"/><path d="M-.75-.75H8.708V18.895H-.75ZM6.041,1.917H1.917V16.228H6.041Z" transform="translate(16.377 21.106)" fill="#38ceff"/><path d="M40.711,1.917H0V-.75H40.711Z" transform="translate(0 38.084)" fill="#38ceff"/><path d="M7.374-.75A8.124,8.124,0,1,1-.75,7.374,8.134,8.134,0,0,1,7.374-.75Zm0,13.582A5.458,5.458,0,1,0,1.917,7.374,5.464,5.464,0,0,0,7.374,12.832Z" transform="translate(11.292 0.75)" fill="#38ceff"/><path d="M1.355,8.146-.53,6.261,6.261-.53,8.146,1.355Z" transform="translate(6.361 12.796)" fill="#38ceff"/></g></svg>
+                            <p>Habilidades de pesquisa</p>
+                        </div>
+                        <div class="card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33.575" height="40" viewBox="0 0 33.575 40"><path d="M28.244,40.7l0-12.874.363-.385a17.216,17.216,0,0,0,4.712-11.861,12.169,12.169,0,0,0-13-12.191A12.613,12.613,0,0,0,8.89,16.227v1.46L5.974,23.535l2.934,1.459v5.827a2.2,2.2,0,0,0,2.148,2.217h4.629V40.7H13.023v-5H11A4.878,4.878,0,0,1,6.247,30.82V26.642L2.4,24.731l3.825-7.67v-.79A15.274,15.274,0,0,1,20.085.74l.031,0a14.83,14.83,0,0,1,15.863,14.85A19.858,19.858,0,0,1,30.9,28.875l0,11.827Z" transform="translate(-2.404 -0.702)" fill="#38ceff"/><path d="M5.654-.75a6.4,6.4,0,1,1-6.4,6.4A6.411,6.411,0,0,1,5.654-.75Zm0,10.147A3.743,3.743,0,1,0,1.911,5.654,3.747,3.747,0,0,0,5.654,9.4Z" transform="translate(13.055 11.001)" fill="#38ceff"/><path d="M1.911,3.614H-.75V-.75H1.911Z" transform="translate(18.128 9.298)" fill="#38ceff"/><path d="M1.911,3.614H-.75V-.75H1.911Z" transform="translate(18.128 21.148)" fill="#38ceff"/><path d="M2.725,3.466l-3.751-2.2,1.344-2.3,3.751,2.2Z" transform="translate(12.06 12.472)" fill="#38ceff"/><path d="M2.751,3.462-1.025,1.279l1.332-2.3L4.083,1.159Z" transform="translate(22.315 18.398)" fill="#38ceff"/><path d="M.307,3.462l-1.332-2.3L2.751-1.025l1.332,2.3Z" transform="translate(22.315 12.473)" fill="#38ceff"/><path d="M.318,3.466l-1.344-2.3,3.751-2.2,1.344,2.3Z" transform="translate(12.06 18.397)" fill="#38ceff"/></svg>
+                            <p>Habilidades de pensamento</p>
+                        </div>
+                        <div class="card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="39.629" height="40.003" viewBox="0 0 39.629 40.003"><path d="M10.822,26.249A3.755,3.755,0,0,0,7.09,22.517a3.727,3.727,0,0,0-3.723,3.727H.73a6.365,6.365,0,0,1,12.729,0Z" transform="translate(-0.73 13.754)" fill="#38ceff"/><path d="M3.927-.75A4.677,4.677,0,1,1-.75,3.927,4.682,4.682,0,0,1,3.927-.75Zm0,6.716A2.039,2.039,0,1,0,1.887,3.927,2.042,2.042,0,0,0,3.927,5.966Z" transform="translate(2.438 24.292)" fill="#38ceff"/><path d="M21.109,12.855H18.472a3.727,3.727,0,1,0-7.455,0H8.38a6.365,6.365,0,1,1,12.729,0Z" transform="translate(5.07 3.602)" fill="#38ceff"/><path d="M3.927-.75A4.677,4.677,0,1,1-.75,3.927,4.682,4.682,0,0,1,3.927-.75Zm0,6.716A2.039,2.039,0,1,0,1.887,3.927,2.042,2.042,0,0,0,3.927,5.966Z" transform="translate(15.888 0.75)" fill="#38ceff"/><path d="M18.667,26.249,16.03,26.24a6.4,6.4,0,0,1,6.36-6.36,6.365,6.365,0,0,1,6.369,6.365H26.122a3.727,3.727,0,0,0-3.727-3.727A3.754,3.754,0,0,0,18.667,26.249Z" transform="translate(10.87 13.754)" fill="#38ceff"/><path d="M3.927-.75A4.677,4.677,0,1,1-.75,3.927,4.682,4.682,0,0,1,3.927-.75Zm0,6.716A2.039,2.039,0,1,0,1.887,3.927,2.042,2.042,0,0,0,3.927,5.966Z" transform="translate(29.338 24.292)" fill="#38ceff"/><path d="M5.318,19.246l-2.625-.254A16.492,16.492,0,0,1,13.318,5.138l.926,2.469A13.854,13.854,0,0,0,5.318,19.246Z" transform="translate(0.759 2.577)" fill="#38ceff"/><path d="M14.58,24.889A16.427,16.427,0,0,1,8.6,23.758l.96-2.456a13.764,13.764,0,0,0,10.046,0l.96,2.456A16.427,16.427,0,0,1,14.58,24.889Z" transform="translate(5.235 14.831)" fill="#38ceff"/><path d="M23.728,19.239A13.749,13.749,0,0,0,14.743,7.623l.9-2.478A16.386,16.386,0,0,1,26.353,18.988Z" transform="translate(9.895 2.582)" fill="#38ceff"/></svg>
+                            <p>Habilidades sociais</p>
+                        </div>
+                        <div class="card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="41.541" height="40" viewBox="0 0 41.541 40"><path d="M14.918,5.48H29.005a8.447,8.447,0,0,1,8.438,8.438V36.655L30.2,29.389H14.9A8.419,8.419,0,0,1,6.48,20.869V13.918A8.447,8.447,0,0,1,14.918,5.48ZM34.673,29.952V13.918a5.675,5.675,0,0,0-5.668-5.668H14.918A5.675,5.675,0,0,0,9.25,13.918V20.9a5.578,5.578,0,0,0,.177,1.479A5.649,5.649,0,0,0,14.9,26.62H31.352Z" transform="translate(4.099 3.345)" fill="#38ceff"/><path d="M9.188.7h14.2a8.438,8.438,0,0,1,8.327,8.438v3.231H19.767A5.675,5.675,0,0,0,14.1,18.037V24.7H7.983L.75,31.834V9.138A8.447,8.447,0,0,1,9.188.7ZM23.357,3.469H9.188A5.675,5.675,0,0,0,3.519,9.138V25.214l3.328-3.281h4.482v-3.9A8.447,8.447,0,0,1,19.767,9.6h9.176V9.138A5.69,5.69,0,0,0,23.357,3.469Z" transform="translate(-0.75 -0.7)" fill="#38ceff"/></svg>
+                            <p>Habilidades de comunicação</p>
+                        </div>
+                        <div class="card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33.209" height="40" viewBox="0 0 33.209 40"><path d="M10.169,1.917H0V-.75H10.169Z" transform="translate(11.52 0.75)" fill="#38ceff"/><path d="M15.855-.75a16.6,16.6,0,1,1-16.6,16.6A16.623,16.623,0,0,1,15.855-.75Zm0,30.542A13.938,13.938,0,1,0,1.917,15.855,13.954,13.954,0,0,0,15.855,29.792Z" transform="translate(0.75 7.541)" fill="#38ceff"/><path d="M15.034,26.752A9.781,9.781,0,0,1,8.1,23.887L9.984,22a7.146,7.146,0,1,0,10.1-10.114L21.967,10a9.808,9.808,0,0,1-6.933,16.753Z" transform="translate(1.571 6.444)" fill="#38ceff"/><path d="M1.917,6.791H-.75V0H1.917Z" transform="translate(16.021 1.333)" fill="#38ceff"/><path d="M2.272-.75A3.022,3.022,0,1,1-.75,2.272,3.026,3.026,0,0,1,2.272-.75Zm0,3.378a.356.356,0,1,0-.356-.356A.356.356,0,0,0,2.272,2.628Z" transform="translate(14.332 21.123)" fill="#38ceff"/><path d="M1.917,8.48H-.75V0H1.917Z" transform="translate(16.021 13.209)" fill="#38ceff"/><path d="M2.865,4.751l-3.4-3.4L1.355-.53l3.4,3.4Z" transform="translate(2.61 7.712)" fill="#38ceff"/><path d="M1.355,4.751-.53,2.865l3.4-3.4L4.751,1.355Z" transform="translate(26.379 7.712)" fill="#38ceff"/></svg>
+                            <p>Autogestão <i>(self-management)</i></p>
+                        </div>
+                    </div>
+                    <p class="mt-3">No Porto, essas competências fazem parte do cotidiano escolar, formando jovens capazes de aprender, se adaptar e liderar em qualquer contexto.</p>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="habilidades-para-a-vida">
-        <div class="container">
-            <div class="col-md-10 offset-md-1 col-12">
-                <h2 class="text-center text-primary mb-4">Muito além do conteúdo: habilidades para a vida</h2>
-                <p>As Abordagens de Aprendizagem (Approaches to Learning – ATLs) estão presentes em todas as áreas do conhecimento, atravessam todas as disciplinas e preparam os estudantes para um mundo em constante transformação.</p>
-                <p>O programa desenvolve cinco grandes competências formativas:</p>
-                <div id="cards-habilidades" class="d-grid">
-                    <div class="card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40.711" height="40" viewBox="0 0 40.711 40"><g transform="translate(0)"><path d="M-.75-.75H8.708V12.1H-.75ZM6.041,1.917H1.917v7.52H6.041Z" transform="translate(2.794 27.897)" fill="#38ceff"/><path d="M-.75-.75H8.708V25.668H-.75ZM6.041,1.917H1.917V23H6.041Z" transform="translate(29.959 14.332)" fill="#38ceff"/><path d="M-.75-.75H8.708V18.895H-.75ZM6.041,1.917H1.917V16.228H6.041Z" transform="translate(16.377 21.106)" fill="#38ceff"/><path d="M40.711,1.917H0V-.75H40.711Z" transform="translate(0 38.084)" fill="#38ceff"/><path d="M7.374-.75A8.124,8.124,0,1,1-.75,7.374,8.134,8.134,0,0,1,7.374-.75Zm0,13.582A5.458,5.458,0,1,0,1.917,7.374,5.464,5.464,0,0,0,7.374,12.832Z" transform="translate(11.292 0.75)" fill="#38ceff"/><path d="M1.355,8.146-.53,6.261,6.261-.53,8.146,1.355Z" transform="translate(6.361 12.796)" fill="#38ceff"/></g></svg>
-                        <p>Habilidades de pesquisa</p>
+        </section>
+        <section id="perfil-do-aluno">
+            <div class="container">
+                <div class="col-md-8 offset-md-2 col-12">
+                    <div class="bg-primary content-perfil">
+                        <h2 class="text-center text-white mb-4">Perfil do Aluno IB – IB Learner Profile</h2>
+                        <p class="text-center text-white mb-0">Os alunos do IB desenvolvem, ao longo do programa, qualidades que os preparam para aprender com autonomia, colaborar com propósito, liderar com responsabilidade e transformar o mundo ao seu redor.</p>
+                        <p class="text-center text-white mb-4">Esses atributos moldam o que o aluno do IB é capaz de ser:</p>
+                        <div id="cards-perfil" class="d-grid">
+                            <div class="d-flex perfil">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><g transform="translate(-0.5 -0.5)"><path d="M29.592,32.581a18.287,18.287,0,1,1,2.99-2.99L48,45.009,45.009,48ZM4.229,18.262A14.035,14.035,0,1,0,18.265,4.227,14.05,14.05,0,0,0,4.229,18.262Z" transform="translate(0.5 0.5)" fill="#fff"/></g></svg>
+                                <div class="d-flex flex-column">
+                                    <h3>Investigador</h3>
+                                    <p>Curioso, com iniciativa e habilidades para pesquisa e aprendizado independente</p>
+                                </div>
+                            </div>
+                            <div class="d-flex perfil">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="48" viewBox="0 0 42 48"><g transform="translate(-0.46 3.26)"><path d="M19.905,32.771H16.318V22.916a3.336,3.336,0,0,0-.982-2.33l-.009-.009-4.635-4.706a1.675,1.675,0,0,0-2.319-.008,1.787,1.787,0,0,0-.486,1.187,3.047,3.047,0,0,0,.905,2.144L8.8,19.2l3.713,3.731L9.97,25.462,6.259,21.733A6.612,6.612,0,0,1,4.3,17.049v-.034a5.363,5.363,0,0,1,1.507-3.659l.032-.032a5.277,5.277,0,0,1,7.38,0l.019.019,4.64,4.712a6.9,6.9,0,0,1,2.028,4.833v9.883Z" transform="translate(3.208 11.969)" fill="#fff"/><path d="M10.935,36.438H7.348V35.387L2.492,30.531A6.9,6.9,0,0,1,.46,25.693V12.426a5.238,5.238,0,1,1,10.475,0v9.551L15.558,26.6l-2.537,2.537L7.348,23.459V12.41a1.614,1.614,0,0,0-1.623-1.623H5.687a1.614,1.614,0,0,0-1.64,1.623V25.665a3.336,3.336,0,0,0,.982,2.33L10.935,33.9Z" transform="translate(0 8.302)" fill="#fff"/><path d="M14.587,32.739H11V22.856a6.9,6.9,0,0,1,2.032-4.837l4.655-4.655a5.277,5.277,0,0,1,7.38,0l.032.032a5.363,5.363,0,0,1,1.507,3.659v.034a6.612,6.612,0,0,1-1.959,4.685L20.935,25.5l-2.543-2.531,3.72-3.738a3.047,3.047,0,0,0,.905-2.144,1.787,1.787,0,0,0-.486-1.187,1.675,1.675,0,0,0-2.322.012l-4.641,4.641a3.335,3.335,0,0,0-.981,2.329Z" transform="translate(8.806 12)" fill="#fff"/><path d="M23.333,36.438H19.745V33.9l5.906-5.906a3.335,3.335,0,0,0,.981-2.329V12.41a1.614,1.614,0,0,0-1.64-1.623h-.038a1.614,1.614,0,0,0-1.623,1.623V23.459L17.66,29.132,15.123,26.6l4.623-4.623V12.421a5.238,5.238,0,1,1,10.475,0V25.693a6.9,6.9,0,0,1-2.032,4.837l-4.856,4.856Z" transform="translate(12.239 8.302)" fill="#fff"/><g transform="translate(9.37 -3.26)"><path d="M11.072-1A12.072,12.072,0,1,1-1,11.072,12.085,12.085,0,0,1,11.072-1Zm0,20.556a8.484,8.484,0,1,0-8.484-8.484A8.494,8.494,0,0,0,11.072,19.556Z" transform="translate(1 1)" fill="#fff"/><path d="M4.22-1c1.237,0,2.957.735,4.124,4.237a25.72,25.72,0,0,1,1.1,7.835,25.72,25.72,0,0,1-1.1,7.835c-1.167,3.5-2.887,4.237-4.124,4.237S1.263,22.408.1,18.906A25.72,25.72,0,0,1-1,11.072,25.72,25.72,0,0,1,.1,3.237C1.263-.265,2.983-1,4.22-1Zm0,20.344c.626-.894,1.632-3.731,1.632-8.272S4.845,3.693,4.22,2.8c-.626.894-1.632,3.731-1.632,8.272S3.594,18.45,4.22,19.344Z" transform="translate(7.852 1)" fill="#fff"/><path d="M20.556,2.587H0V-1H20.556Z" transform="translate(1.794 11.278)" fill="#fff"/></g></g></svg>
+                                <div class="d-flex flex-column">
+                                    <h3>Mente aberta</h3>
+                                    <p>Respeita diferentes culturas, valores e pontos de vista</p>
+                                </div>
+                            </div>
+                            <div class="d-flex perfil">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="40" viewBox="0 0 48 40"><g transform="translate(-0.5 -2.41)"><path d="M.5,2.41H18.531a8.062,8.062,0,0,1,8.056,8.049V38.348l-4.174-.007V38.3a3.854,3.854,0,0,0-1.132-2.72,3.91,3.91,0,0,0-2.75-1.141H.5ZM22.413,31.271V10.459a3.885,3.885,0,0,0-3.882-3.879H4.674V30.27H18.531A8.1,8.1,0,0,1,22.413,31.271Z" transform="translate(0 0)" fill="#fff"/><path d="M19.056,2.41H37.087V34.441H19.056a3.91,3.91,0,0,0-2.75,1.141,3.854,3.854,0,0,0-1.132,2.72v.039L11,38.348V10.459A8.062,8.062,0,0,1,19.056,2.41ZM32.913,6.581H19.056a3.885,3.885,0,0,0-3.882,3.879V31.271a8.1,8.1,0,0,1,3.882-1H32.913Z" transform="translate(11.413 0)" fill="#fff"/><path d="M48.5,26.829H.5V16.77H4.674v5.885H44.326V16.77H48.5Z" transform="translate(0 15.581)" fill="#fff"/></g></svg>
+                                <div class="d-flex flex-column">
+                                    <h3>Informado e instruído</h3>
+                                    <p>Com conhecimento amplo e profundo em diversas disciplinas</p>
+                                </div>
+                            </div>
+                            <div class="d-flex perfil">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="40" viewBox="0 0 48 40"><g transform="translate(-0.5 -2.41)"><path d="M34.476,2.41A14.006,14.006,0,0,1,48.5,16.422c0,8.027-4.1,15.061-11.868,20.339a42.793,42.793,0,0,1-11.583,5.5l-.548.149-.548-.149a42.793,42.793,0,0,1-11.583-5.5C4.6,31.484.5,24.45.5,16.419v-.013A14.014,14.014,0,0,1,10.521,3.07,14.071,14.071,0,0,1,24.488,6.594,14.024,14.024,0,0,1,34.446,2.41ZM24.5,38.077a39.85,39.85,0,0,0,9.873-4.819c6.6-4.521,9.953-10.186,9.953-16.839a9.838,9.838,0,0,0-9.85-9.846h-.017a9.851,9.851,0,0,0-8.213,4.45L24.514,13.66l-1.751-2.624A9.872,9.872,0,0,0,4.674,16.425c0,6.65,3.351,12.314,9.953,16.833A39.848,39.848,0,0,0,24.5,38.077Z" transform="translate(0 0)" fill="#fff"/><path d="M18.913,23.063l-2.871-3.03a11.022,11.022,0,0,0,3.418-7.752A1.878,1.878,0,0,0,17.572,10.4L17.55,6.23a6.052,6.052,0,0,1,6.084,6.084v.025A15.22,15.22,0,0,1,18.913,23.063Z" transform="translate(16.894 4.117)" fill="#fff"/></g></svg>
+                                <div class="d-flex flex-column">
+                                    <h3>Solidário</h3>
+                                    <p>Mostra empatia, compaixão e compromisso com o bem-estar dos outros</p>
+                                </div>
+                            </div>
+                            <div class="d-flex perfil">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><g transform="translate(-1766 -2575)"><rect width="48" height="48" transform="translate(1766 2575)" fill="#fff" opacity="0.004"/><g transform="translate(1768.622 2574.517)"><path d="M14.648,7.23,16.212,10.5l3.524.521L17.193,13.57l.6,3.608-3.149-1.689L11.5,17.177l.6-3.608L9.56,11.025l3.524-.521Z" transform="translate(6.734 7.323)" fill="#fff"/><path d="M16.941,4.91l2.967,6.212,6.527.965L21.72,16.8l1.13,6.74-5.908-3.169-5.908,3.169,1.13-6.74L7.447,12.087l6.527-.965ZM17.624,15l-.522-.077-.161-.337-.161.337L16.259,15l.373.373-.08.476.39-.209.39.209-.08-.476Z" transform="translate(4.441 4.805)" fill="#fff"/><path d="M21.379.483a18.021,18.021,0,0,1,11.965,31.5,5.76,5.76,0,0,0-1.91,4.314v6.122a6.075,6.075,0,0,1-6.069,6.069H17.4a6.075,6.075,0,0,1-6.069-6.069V36.3A5.869,5.869,0,0,0,9.4,31.955,18.019,18.019,0,0,1,21.379.483Zm5.884,35.828a9.933,9.933,0,0,1,3.3-7.441l.01-.009a13.848,13.848,0,1,0-18.4-.017l.009.008A10.046,10.046,0,0,1,15.5,36.3v6.111a1.9,1.9,0,0,0,1.9,1.9h7.966a1.9,1.9,0,0,0,1.9-1.9Z" transform="translate(0)" fill="#fff"/><path d="M15.932,3.171H0V-1H15.932Z" transform="translate(13.416 35.365)" fill="#fff"/></g></g></svg>
+                                <div class="d-flex flex-column">
+                                    <h3>Pensador</h3>
+                                    <p>Crítico e criativo na abordagem de problemas complexos</p>
+                                </div>
+                            </div>
+                            <div class="d-flex perfil">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><g transform="translate(-0.5 -0.5)"><path d="M16.381,8.17l2.609,5.259,5.8.856L20.6,18.375l.981,5.781-5.2-2.734-5.2,2.734.981-5.781L7.97,14.285l5.8-.856Z" transform="translate(8.12 8.337)" fill="#fff"/><path d="M14.839,5.92l2.793,5.631,6.22.917-4.5,4.386,1.052,6.2-5.568-2.929L9.271,23.053l1.052-6.2-4.5-4.386,6.22-.917ZM17.591,14.5l-1.9-.28-.856-1.726-.856,1.726-1.9.28,1.371,1.337-.32,1.888,1.7-.9,1.7.9-.32-1.888Z" transform="translate(9.661 9.572)" fill="#fff"/><path d="M3.174,10H-1V0H3.174Z" transform="translate(23.413 0.5)" fill="#fff"/><path d="M3.174,10H-1V0H3.174Z" transform="translate(23.413 38.504)" fill="#fff"/><path d="M10,3.174H0V-1H10Z" transform="translate(38.504 23.413)" fill="#fff"/><path d="M10,3.174H0V-1H10Z" transform="translate(0.5 23.413)" fill="#fff"/><path d="M21.08-1A22.08,22.08,0,1,1-1,21.08,22.105,22.105,0,0,1,21.08-1Zm0,39.986A17.906,17.906,0,1,0,3.174,21.08,17.927,17.927,0,0,0,21.08,38.986Z" transform="translate(3.42 3.42)" fill="#fff"/></g></svg>
+                                <div class="d-flex flex-column">
+                                    <h3>Audaz</h3>
+                                    <p>Enfrenta desafios com coragem e determinação</p>
+                                </div>
+                            </div>
+                            <div class="d-flex perfil">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="46" viewBox="0 0 48 46"><path d="M24.552.48C11.29.48.5,10.232.5,22.219A20.641,20.641,0,0,0,7.584,37.654a25.091,25.091,0,0,0,16.863,6.3,26.089,26.089,0,0,0,6.074-.731L46.99,46.48,44.48,34.065A20.564,20.564,0,0,0,48.5,22.186v-.029C48.5,10.2,37.757.48,24.552.48Zm-.109,39.356c-10.9,0-19.778-7.9-19.778-17.618a16.544,16.544,0,0,1,5.77-12.383A21.083,21.083,0,0,1,24.552,4.6c10.9,0,19.774,7.867,19.783,17.541a16.452,16.452,0,0,1-3.7,10.114l-.614.752,1.662,8.221L30.4,39l-.467.123A21.865,21.865,0,0,1,24.443,39.836Z" transform="translate(-0.5 -0.48)" fill="#fff"/><path d="M0,3.146H3.938V-1H0Z" transform="translate(22.083 20.646)" fill="#fff"/><path d="M0,3.146H3.959V-1H0Z" transform="translate(12.125 20.646)" fill="#fff"/><path d="M0,3.146H3.959V-1H0Z" transform="translate(32.02 20.646)" fill="#fff"/></svg>
+                                <div class="d-flex flex-column">
+                                    <h3>Comunicador</h3>
+                                    <p>Expressa-se com confiança em mais de um idioma e em diferentes contextos</p>
+                                </div>
+                            </div>
+                            <div class="d-flex perfil">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><g transform="translate(-0.449 -0.48)"><path d="M12.058,48V43.834h9.873V7.9H20.91a4.682,4.682,0,0,0-3.27,1.435,8.73,8.73,0,0,1-4.507,2.538L18.127,23.53V28.04h-.018a8.565,8.565,0,0,1-8.527,8H8.545A8.564,8.564,0,0,1,0,27.478v-3.6H.02v-.343l4.9-11.469H.1V7.9H11.362a4.542,4.542,0,0,0,3.255-1.429l.012-.011a8.866,8.866,0,0,1,6.23-2.726h1.072V0H26.09V3.729h1.067A8.923,8.923,0,0,1,33.428,6.45,4.742,4.742,0,0,0,36.766,7.9H47.916v4.166H43.1L48,23.531V28.04h-.018a8.565,8.565,0,0,1-8.527,8H38.415a8.564,8.564,0,0,1-8.543-8.563v-3.6h.021V23.53l5-11.682a8.927,8.927,0,0,1-4.463-2.506A4.739,4.739,0,0,0,27.113,7.9H26.09V43.834h9.874V48ZM38.415,31.875h1.041a4.4,4.4,0,0,0,4.35-3.835h-9.74A4.4,4.4,0,0,0,38.415,31.875Zm-29.871,0H9.583a4.4,4.4,0,0,0,4.352-3.835H4.194A4.4,4.4,0,0,0,8.545,31.875Zm35.08-8L38.956,12.936,34.27,23.874Zm-29.873,0L9.065,12.936,4.4,23.874Z" transform="translate(0.449 0.48)" fill="#fff"/></g></svg>
+                                <div class="d-flex flex-column">
+                                    <h3>Equilibrado</h3>
+                                    <p>Cuida do bem-estar físico, mental e emocional</p>
+                                </div>
+                            </div>
+                            <div class="d-flex perfil">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><g transform="translate(-1766 -2780)"><rect width="48" height="48" transform="translate(1766 2780)" fill="#fff" opacity="0"/><g transform="translate(1767.607 2779.611)"><path d="M11.426,18.645,4.3,22.5l1.384-8.135L0,8.646,7.857,7.48,11.426,0,15,7.48l7.857,1.166-5.682,5.716L18.556,22.5Z" transform="translate(11.026 11.723)" fill="#fff"/><path d="M22.453,48.389l-.655-.218a51.333,51.333,0,0,1-9.333-4.383,28.024,28.024,0,0,1-6.638-5.358A12.231,12.231,0,0,1,2.478,30.5v-.022a17.507,17.507,0,0,1,1.152-6.61,13.427,13.427,0,0,0,.92-5.242A21.938,21.938,0,0,0,2.656,9.56L2.25,8.646,5.368,2.691h9.11A18.382,18.382,0,0,0,21.54.831l.9-.441.9.429a18.385,18.385,0,0,0,7.073,1.768h9.152l2.968,5.968-.38.882a21.927,21.927,0,0,0-1.8,9.055v.03a14.132,14.132,0,0,0,.879,5.273,18.239,18.239,0,0,1,1.09,6.58,12.231,12.231,0,0,1-3.279,8,27.623,27.623,0,0,1-6.612,5.4,50.569,50.569,0,0,1-9.326,4.4ZM6.622,30.467c.051,4.106,4.374,7.583,7.993,9.778A48.18,48.18,0,0,0,22.452,44a47.539,47.539,0,0,0,7.879-3.8c3.581-2.2,7.849-5.687,7.849-9.826A14.132,14.132,0,0,0,37.3,25.1a18.233,18.233,0,0,1-1.09-6.565A26.023,26.023,0,0,1,37.98,8.7L37,6.731l-6.723,0a22.491,22.491,0,0,1-7.81-1.761,22.489,22.489,0,0,1-7.815,1.864l-.115,0H7.876L6.838,8.817a26.021,26.021,0,0,1,1.856,9.819,17.487,17.487,0,0,1-1.152,6.6A13.422,13.422,0,0,0,6.622,30.467Z" transform="translate(0 0)" fill="#fff"/></g></g></svg>
+                                <div class="d-flex flex-column">
+                                    <h3>Íntegro</h3>
+                                    <p>Age com honestidade, justiça e senso ético</p>
+                                </div>
+                            </div>
+                            <div class="d-flex perfil">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><g transform="translate(-2242 -2780)"><rect width="48" height="48" transform="translate(2242 2780)" fill="#fff" opacity="0"/><path d="M32.582,48.452l0-15.841.568-.6a19.692,19.692,0,0,0,5.39-13.567,13.766,13.766,0,0,0-14.7-13.793A14.286,14.286,0,0,0,10.9,19.187v1.849L7.656,27.543l3.266,1.625v7.163a2.071,2.071,0,0,0,2.009,2.083h5.946V48.451H14.713V42.579H12.849A6.248,6.248,0,0,1,6.758,36.33V31.748L2.068,29.416l4.668-9.361v-.8A18.452,18.452,0,0,1,23.475.5l.048,0A17.931,17.931,0,0,1,42.7,18.449a23.829,23.829,0,0,1-5.958,15.795l0,14.207Z" transform="translate(2243.614 2779.548)" fill="#fff"/><g transform="translate(2264.5 2792.5)"><path d="M-2261.864-2777.136a8.938,8.938,0,0,1-2.636-6.364,8.941,8.941,0,0,1,2.636-6.364,8.944,8.944,0,0,1,6.364-2.636,8.944,8.944,0,0,1,6.364,2.636,8.942,8.942,0,0,1,2.636,6.364,8.939,8.939,0,0,1-2.636,6.364,8.94,8.94,0,0,1-6.364,2.636A8.94,8.94,0,0,1-2261.864-2777.136Zm-1.636-6.364a7.949,7.949,0,0,0,2.344,5.657,7.947,7.947,0,0,0,5.656,2.343,7.947,7.947,0,0,0,5.656-2.343,7.948,7.948,0,0,0,2.344-5.657,7.948,7.948,0,0,1-2.344,5.657,7.947,7.947,0,0,1-5.656,2.343,7.947,7.947,0,0,1-5.656-2.343,7.949,7.949,0,0,1-2.344-5.657Zm2.391,0a5.616,5.616,0,0,0,5.609,5.609,5.616,5.616,0,0,0,5.609-5.609,5.616,5.616,0,0,0-5.609-5.609A5.615,5.615,0,0,0-2261.109-2783.5Zm12.217,0a6.616,6.616,0,0,0-6.609-6.609,6.616,6.616,0,0,0-6.609,6.609,6.616,6.616,0,0,1,6.609-6.609A6.616,6.616,0,0,1-2248.891-2783.5Zm-7.608.4v-4.4h2v3.6l1.688,2.923-1.847,1.066Z" transform="translate(2260 2788)" fill="#fff"/></g></g></svg>
+                                <div class="d-flex flex-column">
+                                    <h3>Reflexivo</h3>
+                                    <p>Avalia suas aprendizagens e experiências para promover seu crescimento pessoal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-white text-center mt-5 mb-0 fw-bold">Esse é o aluno IB.</p>
+                        <p class="text-white text-center">E é esse aluno que o Porto forma — com excelência, propósito e visão de futuro.</p>
                     </div>
-                    <div class="card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="33.575" height="40" viewBox="0 0 33.575 40"><path d="M28.244,40.7l0-12.874.363-.385a17.216,17.216,0,0,0,4.712-11.861,12.169,12.169,0,0,0-13-12.191A12.613,12.613,0,0,0,8.89,16.227v1.46L5.974,23.535l2.934,1.459v5.827a2.2,2.2,0,0,0,2.148,2.217h4.629V40.7H13.023v-5H11A4.878,4.878,0,0,1,6.247,30.82V26.642L2.4,24.731l3.825-7.67v-.79A15.274,15.274,0,0,1,20.085.74l.031,0a14.83,14.83,0,0,1,15.863,14.85A19.858,19.858,0,0,1,30.9,28.875l0,11.827Z" transform="translate(-2.404 -0.702)" fill="#38ceff"/><path d="M5.654-.75a6.4,6.4,0,1,1-6.4,6.4A6.411,6.411,0,0,1,5.654-.75Zm0,10.147A3.743,3.743,0,1,0,1.911,5.654,3.747,3.747,0,0,0,5.654,9.4Z" transform="translate(13.055 11.001)" fill="#38ceff"/><path d="M1.911,3.614H-.75V-.75H1.911Z" transform="translate(18.128 9.298)" fill="#38ceff"/><path d="M1.911,3.614H-.75V-.75H1.911Z" transform="translate(18.128 21.148)" fill="#38ceff"/><path d="M2.725,3.466l-3.751-2.2,1.344-2.3,3.751,2.2Z" transform="translate(12.06 12.472)" fill="#38ceff"/><path d="M2.751,3.462-1.025,1.279l1.332-2.3L4.083,1.159Z" transform="translate(22.315 18.398)" fill="#38ceff"/><path d="M.307,3.462l-1.332-2.3L2.751-1.025l1.332,2.3Z" transform="translate(22.315 12.473)" fill="#38ceff"/><path d="M.318,3.466l-1.344-2.3,3.751-2.2,1.344,2.3Z" transform="translate(12.06 18.397)" fill="#38ceff"/></svg>
-                        <p>Habilidades de pensamento</p>
+                    <div class="proposito">
+                        <h2 class="text-center text-primary mb-3">Escolhas com propósito: <br> orientação universitária e de carreira</h2>
+                        <h3 class="text-center fw-normal mb-4"><i>University and Career Counselling</i></h3>
+                        <p class="mb-2">Ao longo do Ensino Médio, os alunos do Porto recebem apoio especializado para construir trajetórias acadêmicas e profissionais no Brasil e no exterior.</p>                    
+                        <p class="mb-0"><span class="icon-circle">●</span> Orientação individual na escolha de disciplinas </p>
+                        <p class="mb-0"><span class="icon-circle">●</span> Apoio para ingresso em universidades no Brasil e no mundo </p>
+                        <p class="mb-0"><span class="icon-circle">●</span> Feiras e encontros com representantes de universidades nacionais e internacionais </p>
+                        <p class="mb-0"><span class="icon-circle">●</span> Suporte no processo de candidaturas</p>
+                        <p class="mt-1">Com uma equipe experiente, o Porto garante escolhas alinhadas aos sonhos e ao futuro de cada aluno.</p>
                     </div>
-                    <div class="card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="39.629" height="40.003" viewBox="0 0 39.629 40.003"><path d="M10.822,26.249A3.755,3.755,0,0,0,7.09,22.517a3.727,3.727,0,0,0-3.723,3.727H.73a6.365,6.365,0,0,1,12.729,0Z" transform="translate(-0.73 13.754)" fill="#38ceff"/><path d="M3.927-.75A4.677,4.677,0,1,1-.75,3.927,4.682,4.682,0,0,1,3.927-.75Zm0,6.716A2.039,2.039,0,1,0,1.887,3.927,2.042,2.042,0,0,0,3.927,5.966Z" transform="translate(2.438 24.292)" fill="#38ceff"/><path d="M21.109,12.855H18.472a3.727,3.727,0,1,0-7.455,0H8.38a6.365,6.365,0,1,1,12.729,0Z" transform="translate(5.07 3.602)" fill="#38ceff"/><path d="M3.927-.75A4.677,4.677,0,1,1-.75,3.927,4.682,4.682,0,0,1,3.927-.75Zm0,6.716A2.039,2.039,0,1,0,1.887,3.927,2.042,2.042,0,0,0,3.927,5.966Z" transform="translate(15.888 0.75)" fill="#38ceff"/><path d="M18.667,26.249,16.03,26.24a6.4,6.4,0,0,1,6.36-6.36,6.365,6.365,0,0,1,6.369,6.365H26.122a3.727,3.727,0,0,0-3.727-3.727A3.754,3.754,0,0,0,18.667,26.249Z" transform="translate(10.87 13.754)" fill="#38ceff"/><path d="M3.927-.75A4.677,4.677,0,1,1-.75,3.927,4.682,4.682,0,0,1,3.927-.75Zm0,6.716A2.039,2.039,0,1,0,1.887,3.927,2.042,2.042,0,0,0,3.927,5.966Z" transform="translate(29.338 24.292)" fill="#38ceff"/><path d="M5.318,19.246l-2.625-.254A16.492,16.492,0,0,1,13.318,5.138l.926,2.469A13.854,13.854,0,0,0,5.318,19.246Z" transform="translate(0.759 2.577)" fill="#38ceff"/><path d="M14.58,24.889A16.427,16.427,0,0,1,8.6,23.758l.96-2.456a13.764,13.764,0,0,0,10.046,0l.96,2.456A16.427,16.427,0,0,1,14.58,24.889Z" transform="translate(5.235 14.831)" fill="#38ceff"/><path d="M23.728,19.239A13.749,13.749,0,0,0,14.743,7.623l.9-2.478A16.386,16.386,0,0,1,26.353,18.988Z" transform="translate(9.895 2.582)" fill="#38ceff"/></svg>
-                        <p>Habilidades sociais</p>
-                    </div>
-                    <div class="card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="41.541" height="40" viewBox="0 0 41.541 40"><path d="M14.918,5.48H29.005a8.447,8.447,0,0,1,8.438,8.438V36.655L30.2,29.389H14.9A8.419,8.419,0,0,1,6.48,20.869V13.918A8.447,8.447,0,0,1,14.918,5.48ZM34.673,29.952V13.918a5.675,5.675,0,0,0-5.668-5.668H14.918A5.675,5.675,0,0,0,9.25,13.918V20.9a5.578,5.578,0,0,0,.177,1.479A5.649,5.649,0,0,0,14.9,26.62H31.352Z" transform="translate(4.099 3.345)" fill="#38ceff"/><path d="M9.188.7h14.2a8.438,8.438,0,0,1,8.327,8.438v3.231H19.767A5.675,5.675,0,0,0,14.1,18.037V24.7H7.983L.75,31.834V9.138A8.447,8.447,0,0,1,9.188.7ZM23.357,3.469H9.188A5.675,5.675,0,0,0,3.519,9.138V25.214l3.328-3.281h4.482v-3.9A8.447,8.447,0,0,1,19.767,9.6h9.176V9.138A5.69,5.69,0,0,0,23.357,3.469Z" transform="translate(-0.75 -0.7)" fill="#38ceff"/></svg>
-                        <p>Habilidades de comunicação</p>
-                    </div>
-                    <div class="card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="33.209" height="40" viewBox="0 0 33.209 40"><path d="M10.169,1.917H0V-.75H10.169Z" transform="translate(11.52 0.75)" fill="#38ceff"/><path d="M15.855-.75a16.6,16.6,0,1,1-16.6,16.6A16.623,16.623,0,0,1,15.855-.75Zm0,30.542A13.938,13.938,0,1,0,1.917,15.855,13.954,13.954,0,0,0,15.855,29.792Z" transform="translate(0.75 7.541)" fill="#38ceff"/><path d="M15.034,26.752A9.781,9.781,0,0,1,8.1,23.887L9.984,22a7.146,7.146,0,1,0,10.1-10.114L21.967,10a9.808,9.808,0,0,1-6.933,16.753Z" transform="translate(1.571 6.444)" fill="#38ceff"/><path d="M1.917,6.791H-.75V0H1.917Z" transform="translate(16.021 1.333)" fill="#38ceff"/><path d="M2.272-.75A3.022,3.022,0,1,1-.75,2.272,3.026,3.026,0,0,1,2.272-.75Zm0,3.378a.356.356,0,1,0-.356-.356A.356.356,0,0,0,2.272,2.628Z" transform="translate(14.332 21.123)" fill="#38ceff"/><path d="M1.917,8.48H-.75V0H1.917Z" transform="translate(16.021 13.209)" fill="#38ceff"/><path d="M2.865,4.751l-3.4-3.4L1.355-.53l3.4,3.4Z" transform="translate(2.61 7.712)" fill="#38ceff"/><path d="M1.355,4.751-.53,2.865l3.4-3.4L4.751,1.355Z" transform="translate(26.379 7.712)" fill="#38ceff"/></svg>
-                        <p>Autogestão <i>(self-management)</i></p>
-                    </div>
-                </div>
-                <p class="mt-3">No Porto, essas competências fazem parte do cotidiano escolar, formando jovens capazes de aprender, se adaptar e liderar em qualquer contexto.</p>
-            </div>
-        </div>
-    </section>
-    <section id="perfil-do-aluno">
-        <div class="container">
-            <div class="col-md-8 offset-md-2 col-12">
-                <div class="bg-primary content-perfil">
-                    <h2 class="text-center text-white mb-4">Perfil do Aluno IB – IB Learner Profile</h2>
-                    <p class="text-center text-white mb-0">Os alunos do IB desenvolvem, ao longo do programa, qualidades que os preparam para aprender com autonomia, colaborar com propósito, liderar com responsabilidade e transformar o mundo ao seu redor.</p>
-                    <p class="text-center text-white mb-4">Esses atributos moldam o que o aluno do IB é capaz de ser:</p>
-                    <div id="cards-perfil" class="d-grid">
-                        <div class="d-flex perfil">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><g transform="translate(-0.5 -0.5)"><path d="M29.592,32.581a18.287,18.287,0,1,1,2.99-2.99L48,45.009,45.009,48ZM4.229,18.262A14.035,14.035,0,1,0,18.265,4.227,14.05,14.05,0,0,0,4.229,18.262Z" transform="translate(0.5 0.5)" fill="#fff"/></g></svg>
-                            <div class="d-flex flex-column">
-                                <h3>Investigador</h3>
-                                <p>Curioso, com iniciativa e habilidades para pesquisa e aprendizado independente</p>
-                            </div>
-                        </div>
-                        <div class="d-flex perfil">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="48" viewBox="0 0 42 48"><g transform="translate(-0.46 3.26)"><path d="M19.905,32.771H16.318V22.916a3.336,3.336,0,0,0-.982-2.33l-.009-.009-4.635-4.706a1.675,1.675,0,0,0-2.319-.008,1.787,1.787,0,0,0-.486,1.187,3.047,3.047,0,0,0,.905,2.144L8.8,19.2l3.713,3.731L9.97,25.462,6.259,21.733A6.612,6.612,0,0,1,4.3,17.049v-.034a5.363,5.363,0,0,1,1.507-3.659l.032-.032a5.277,5.277,0,0,1,7.38,0l.019.019,4.64,4.712a6.9,6.9,0,0,1,2.028,4.833v9.883Z" transform="translate(3.208 11.969)" fill="#fff"/><path d="M10.935,36.438H7.348V35.387L2.492,30.531A6.9,6.9,0,0,1,.46,25.693V12.426a5.238,5.238,0,1,1,10.475,0v9.551L15.558,26.6l-2.537,2.537L7.348,23.459V12.41a1.614,1.614,0,0,0-1.623-1.623H5.687a1.614,1.614,0,0,0-1.64,1.623V25.665a3.336,3.336,0,0,0,.982,2.33L10.935,33.9Z" transform="translate(0 8.302)" fill="#fff"/><path d="M14.587,32.739H11V22.856a6.9,6.9,0,0,1,2.032-4.837l4.655-4.655a5.277,5.277,0,0,1,7.38,0l.032.032a5.363,5.363,0,0,1,1.507,3.659v.034a6.612,6.612,0,0,1-1.959,4.685L20.935,25.5l-2.543-2.531,3.72-3.738a3.047,3.047,0,0,0,.905-2.144,1.787,1.787,0,0,0-.486-1.187,1.675,1.675,0,0,0-2.322.012l-4.641,4.641a3.335,3.335,0,0,0-.981,2.329Z" transform="translate(8.806 12)" fill="#fff"/><path d="M23.333,36.438H19.745V33.9l5.906-5.906a3.335,3.335,0,0,0,.981-2.329V12.41a1.614,1.614,0,0,0-1.64-1.623h-.038a1.614,1.614,0,0,0-1.623,1.623V23.459L17.66,29.132,15.123,26.6l4.623-4.623V12.421a5.238,5.238,0,1,1,10.475,0V25.693a6.9,6.9,0,0,1-2.032,4.837l-4.856,4.856Z" transform="translate(12.239 8.302)" fill="#fff"/><g transform="translate(9.37 -3.26)"><path d="M11.072-1A12.072,12.072,0,1,1-1,11.072,12.085,12.085,0,0,1,11.072-1Zm0,20.556a8.484,8.484,0,1,0-8.484-8.484A8.494,8.494,0,0,0,11.072,19.556Z" transform="translate(1 1)" fill="#fff"/><path d="M4.22-1c1.237,0,2.957.735,4.124,4.237a25.72,25.72,0,0,1,1.1,7.835,25.72,25.72,0,0,1-1.1,7.835c-1.167,3.5-2.887,4.237-4.124,4.237S1.263,22.408.1,18.906A25.72,25.72,0,0,1-1,11.072,25.72,25.72,0,0,1,.1,3.237C1.263-.265,2.983-1,4.22-1Zm0,20.344c.626-.894,1.632-3.731,1.632-8.272S4.845,3.693,4.22,2.8c-.626.894-1.632,3.731-1.632,8.272S3.594,18.45,4.22,19.344Z" transform="translate(7.852 1)" fill="#fff"/><path d="M20.556,2.587H0V-1H20.556Z" transform="translate(1.794 11.278)" fill="#fff"/></g></g></svg>
-                            <div class="d-flex flex-column">
-                                <h3>Mente aberta</h3>
-                                <p>Respeita diferentes culturas, valores e pontos de vista</p>
-                            </div>
-                        </div>
-                        <div class="d-flex perfil">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="40" viewBox="0 0 48 40"><g transform="translate(-0.5 -2.41)"><path d="M.5,2.41H18.531a8.062,8.062,0,0,1,8.056,8.049V38.348l-4.174-.007V38.3a3.854,3.854,0,0,0-1.132-2.72,3.91,3.91,0,0,0-2.75-1.141H.5ZM22.413,31.271V10.459a3.885,3.885,0,0,0-3.882-3.879H4.674V30.27H18.531A8.1,8.1,0,0,1,22.413,31.271Z" transform="translate(0 0)" fill="#fff"/><path d="M19.056,2.41H37.087V34.441H19.056a3.91,3.91,0,0,0-2.75,1.141,3.854,3.854,0,0,0-1.132,2.72v.039L11,38.348V10.459A8.062,8.062,0,0,1,19.056,2.41ZM32.913,6.581H19.056a3.885,3.885,0,0,0-3.882,3.879V31.271a8.1,8.1,0,0,1,3.882-1H32.913Z" transform="translate(11.413 0)" fill="#fff"/><path d="M48.5,26.829H.5V16.77H4.674v5.885H44.326V16.77H48.5Z" transform="translate(0 15.581)" fill="#fff"/></g></svg>
-                            <div class="d-flex flex-column">
-                                <h3>Informado e instruído</h3>
-                                <p>Com conhecimento amplo e profundo em diversas disciplinas</p>
-                            </div>
-                        </div>
-                        <div class="d-flex perfil">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="40" viewBox="0 0 48 40"><g transform="translate(-0.5 -2.41)"><path d="M34.476,2.41A14.006,14.006,0,0,1,48.5,16.422c0,8.027-4.1,15.061-11.868,20.339a42.793,42.793,0,0,1-11.583,5.5l-.548.149-.548-.149a42.793,42.793,0,0,1-11.583-5.5C4.6,31.484.5,24.45.5,16.419v-.013A14.014,14.014,0,0,1,10.521,3.07,14.071,14.071,0,0,1,24.488,6.594,14.024,14.024,0,0,1,34.446,2.41ZM24.5,38.077a39.85,39.85,0,0,0,9.873-4.819c6.6-4.521,9.953-10.186,9.953-16.839a9.838,9.838,0,0,0-9.85-9.846h-.017a9.851,9.851,0,0,0-8.213,4.45L24.514,13.66l-1.751-2.624A9.872,9.872,0,0,0,4.674,16.425c0,6.65,3.351,12.314,9.953,16.833A39.848,39.848,0,0,0,24.5,38.077Z" transform="translate(0 0)" fill="#fff"/><path d="M18.913,23.063l-2.871-3.03a11.022,11.022,0,0,0,3.418-7.752A1.878,1.878,0,0,0,17.572,10.4L17.55,6.23a6.052,6.052,0,0,1,6.084,6.084v.025A15.22,15.22,0,0,1,18.913,23.063Z" transform="translate(16.894 4.117)" fill="#fff"/></g></svg>
-                            <div class="d-flex flex-column">
-                                <h3>Solidário</h3>
-                                <p>Mostra empatia, compaixão e compromisso com o bem-estar dos outros</p>
-                            </div>
-                        </div>
-                        <div class="d-flex perfil">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><g transform="translate(-1766 -2575)"><rect width="48" height="48" transform="translate(1766 2575)" fill="#fff" opacity="0.004"/><g transform="translate(1768.622 2574.517)"><path d="M14.648,7.23,16.212,10.5l3.524.521L17.193,13.57l.6,3.608-3.149-1.689L11.5,17.177l.6-3.608L9.56,11.025l3.524-.521Z" transform="translate(6.734 7.323)" fill="#fff"/><path d="M16.941,4.91l2.967,6.212,6.527.965L21.72,16.8l1.13,6.74-5.908-3.169-5.908,3.169,1.13-6.74L7.447,12.087l6.527-.965ZM17.624,15l-.522-.077-.161-.337-.161.337L16.259,15l.373.373-.08.476.39-.209.39.209-.08-.476Z" transform="translate(4.441 4.805)" fill="#fff"/><path d="M21.379.483a18.021,18.021,0,0,1,11.965,31.5,5.76,5.76,0,0,0-1.91,4.314v6.122a6.075,6.075,0,0,1-6.069,6.069H17.4a6.075,6.075,0,0,1-6.069-6.069V36.3A5.869,5.869,0,0,0,9.4,31.955,18.019,18.019,0,0,1,21.379.483Zm5.884,35.828a9.933,9.933,0,0,1,3.3-7.441l.01-.009a13.848,13.848,0,1,0-18.4-.017l.009.008A10.046,10.046,0,0,1,15.5,36.3v6.111a1.9,1.9,0,0,0,1.9,1.9h7.966a1.9,1.9,0,0,0,1.9-1.9Z" transform="translate(0)" fill="#fff"/><path d="M15.932,3.171H0V-1H15.932Z" transform="translate(13.416 35.365)" fill="#fff"/></g></g></svg>
-                            <div class="d-flex flex-column">
-                                <h3>Pensador</h3>
-                                <p>Crítico e criativo na abordagem de problemas complexos</p>
-                            </div>
-                        </div>
-                        <div class="d-flex perfil">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><g transform="translate(-0.5 -0.5)"><path d="M16.381,8.17l2.609,5.259,5.8.856L20.6,18.375l.981,5.781-5.2-2.734-5.2,2.734.981-5.781L7.97,14.285l5.8-.856Z" transform="translate(8.12 8.337)" fill="#fff"/><path d="M14.839,5.92l2.793,5.631,6.22.917-4.5,4.386,1.052,6.2-5.568-2.929L9.271,23.053l1.052-6.2-4.5-4.386,6.22-.917ZM17.591,14.5l-1.9-.28-.856-1.726-.856,1.726-1.9.28,1.371,1.337-.32,1.888,1.7-.9,1.7.9-.32-1.888Z" transform="translate(9.661 9.572)" fill="#fff"/><path d="M3.174,10H-1V0H3.174Z" transform="translate(23.413 0.5)" fill="#fff"/><path d="M3.174,10H-1V0H3.174Z" transform="translate(23.413 38.504)" fill="#fff"/><path d="M10,3.174H0V-1H10Z" transform="translate(38.504 23.413)" fill="#fff"/><path d="M10,3.174H0V-1H10Z" transform="translate(0.5 23.413)" fill="#fff"/><path d="M21.08-1A22.08,22.08,0,1,1-1,21.08,22.105,22.105,0,0,1,21.08-1Zm0,39.986A17.906,17.906,0,1,0,3.174,21.08,17.927,17.927,0,0,0,21.08,38.986Z" transform="translate(3.42 3.42)" fill="#fff"/></g></svg>
-                            <div class="d-flex flex-column">
-                                <h3>Audaz</h3>
-                                <p>Enfrenta desafios com coragem e determinação</p>
-                            </div>
-                        </div>
-                        <div class="d-flex perfil">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="46" viewBox="0 0 48 46"><path d="M24.552.48C11.29.48.5,10.232.5,22.219A20.641,20.641,0,0,0,7.584,37.654a25.091,25.091,0,0,0,16.863,6.3,26.089,26.089,0,0,0,6.074-.731L46.99,46.48,44.48,34.065A20.564,20.564,0,0,0,48.5,22.186v-.029C48.5,10.2,37.757.48,24.552.48Zm-.109,39.356c-10.9,0-19.778-7.9-19.778-17.618a16.544,16.544,0,0,1,5.77-12.383A21.083,21.083,0,0,1,24.552,4.6c10.9,0,19.774,7.867,19.783,17.541a16.452,16.452,0,0,1-3.7,10.114l-.614.752,1.662,8.221L30.4,39l-.467.123A21.865,21.865,0,0,1,24.443,39.836Z" transform="translate(-0.5 -0.48)" fill="#fff"/><path d="M0,3.146H3.938V-1H0Z" transform="translate(22.083 20.646)" fill="#fff"/><path d="M0,3.146H3.959V-1H0Z" transform="translate(12.125 20.646)" fill="#fff"/><path d="M0,3.146H3.959V-1H0Z" transform="translate(32.02 20.646)" fill="#fff"/></svg>
-                            <div class="d-flex flex-column">
-                                <h3>Comunicador</h3>
-                                <p>Expressa-se com confiança em mais de um idioma e em diferentes contextos</p>
-                            </div>
-                        </div>
-                        <div class="d-flex perfil">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><g transform="translate(-0.449 -0.48)"><path d="M12.058,48V43.834h9.873V7.9H20.91a4.682,4.682,0,0,0-3.27,1.435,8.73,8.73,0,0,1-4.507,2.538L18.127,23.53V28.04h-.018a8.565,8.565,0,0,1-8.527,8H8.545A8.564,8.564,0,0,1,0,27.478v-3.6H.02v-.343l4.9-11.469H.1V7.9H11.362a4.542,4.542,0,0,0,3.255-1.429l.012-.011a8.866,8.866,0,0,1,6.23-2.726h1.072V0H26.09V3.729h1.067A8.923,8.923,0,0,1,33.428,6.45,4.742,4.742,0,0,0,36.766,7.9H47.916v4.166H43.1L48,23.531V28.04h-.018a8.565,8.565,0,0,1-8.527,8H38.415a8.564,8.564,0,0,1-8.543-8.563v-3.6h.021V23.53l5-11.682a8.927,8.927,0,0,1-4.463-2.506A4.739,4.739,0,0,0,27.113,7.9H26.09V43.834h9.874V48ZM38.415,31.875h1.041a4.4,4.4,0,0,0,4.35-3.835h-9.74A4.4,4.4,0,0,0,38.415,31.875Zm-29.871,0H9.583a4.4,4.4,0,0,0,4.352-3.835H4.194A4.4,4.4,0,0,0,8.545,31.875Zm35.08-8L38.956,12.936,34.27,23.874Zm-29.873,0L9.065,12.936,4.4,23.874Z" transform="translate(0.449 0.48)" fill="#fff"/></g></svg>
-                            <div class="d-flex flex-column">
-                                <h3>Equilibrado</h3>
-                                <p>Cuida do bem-estar físico, mental e emocional</p>
-                            </div>
-                        </div>
-                        <div class="d-flex perfil">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><g transform="translate(-1766 -2780)"><rect width="48" height="48" transform="translate(1766 2780)" fill="#fff" opacity="0"/><g transform="translate(1767.607 2779.611)"><path d="M11.426,18.645,4.3,22.5l1.384-8.135L0,8.646,7.857,7.48,11.426,0,15,7.48l7.857,1.166-5.682,5.716L18.556,22.5Z" transform="translate(11.026 11.723)" fill="#fff"/><path d="M22.453,48.389l-.655-.218a51.333,51.333,0,0,1-9.333-4.383,28.024,28.024,0,0,1-6.638-5.358A12.231,12.231,0,0,1,2.478,30.5v-.022a17.507,17.507,0,0,1,1.152-6.61,13.427,13.427,0,0,0,.92-5.242A21.938,21.938,0,0,0,2.656,9.56L2.25,8.646,5.368,2.691h9.11A18.382,18.382,0,0,0,21.54.831l.9-.441.9.429a18.385,18.385,0,0,0,7.073,1.768h9.152l2.968,5.968-.38.882a21.927,21.927,0,0,0-1.8,9.055v.03a14.132,14.132,0,0,0,.879,5.273,18.239,18.239,0,0,1,1.09,6.58,12.231,12.231,0,0,1-3.279,8,27.623,27.623,0,0,1-6.612,5.4,50.569,50.569,0,0,1-9.326,4.4ZM6.622,30.467c.051,4.106,4.374,7.583,7.993,9.778A48.18,48.18,0,0,0,22.452,44a47.539,47.539,0,0,0,7.879-3.8c3.581-2.2,7.849-5.687,7.849-9.826A14.132,14.132,0,0,0,37.3,25.1a18.233,18.233,0,0,1-1.09-6.565A26.023,26.023,0,0,1,37.98,8.7L37,6.731l-6.723,0a22.491,22.491,0,0,1-7.81-1.761,22.489,22.489,0,0,1-7.815,1.864l-.115,0H7.876L6.838,8.817a26.021,26.021,0,0,1,1.856,9.819,17.487,17.487,0,0,1-1.152,6.6A13.422,13.422,0,0,0,6.622,30.467Z" transform="translate(0 0)" fill="#fff"/></g></g></svg>
-                            <div class="d-flex flex-column">
-                                <h3>Íntegro</h3>
-                                <p>Age com honestidade, justiça e senso ético</p>
-                            </div>
-                        </div>
-                        <div class="d-flex perfil">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><g transform="translate(-2242 -2780)"><rect width="48" height="48" transform="translate(2242 2780)" fill="#fff" opacity="0"/><path d="M32.582,48.452l0-15.841.568-.6a19.692,19.692,0,0,0,5.39-13.567,13.766,13.766,0,0,0-14.7-13.793A14.286,14.286,0,0,0,10.9,19.187v1.849L7.656,27.543l3.266,1.625v7.163a2.071,2.071,0,0,0,2.009,2.083h5.946V48.451H14.713V42.579H12.849A6.248,6.248,0,0,1,6.758,36.33V31.748L2.068,29.416l4.668-9.361v-.8A18.452,18.452,0,0,1,23.475.5l.048,0A17.931,17.931,0,0,1,42.7,18.449a23.829,23.829,0,0,1-5.958,15.795l0,14.207Z" transform="translate(2243.614 2779.548)" fill="#fff"/><g transform="translate(2264.5 2792.5)"><path d="M-2261.864-2777.136a8.938,8.938,0,0,1-2.636-6.364,8.941,8.941,0,0,1,2.636-6.364,8.944,8.944,0,0,1,6.364-2.636,8.944,8.944,0,0,1,6.364,2.636,8.942,8.942,0,0,1,2.636,6.364,8.939,8.939,0,0,1-2.636,6.364,8.94,8.94,0,0,1-6.364,2.636A8.94,8.94,0,0,1-2261.864-2777.136Zm-1.636-6.364a7.949,7.949,0,0,0,2.344,5.657,7.947,7.947,0,0,0,5.656,2.343,7.947,7.947,0,0,0,5.656-2.343,7.948,7.948,0,0,0,2.344-5.657,7.948,7.948,0,0,1-2.344,5.657,7.947,7.947,0,0,1-5.656,2.343,7.947,7.947,0,0,1-5.656-2.343,7.949,7.949,0,0,1-2.344-5.657Zm2.391,0a5.616,5.616,0,0,0,5.609,5.609,5.616,5.616,0,0,0,5.609-5.609,5.616,5.616,0,0,0-5.609-5.609A5.615,5.615,0,0,0-2261.109-2783.5Zm12.217,0a6.616,6.616,0,0,0-6.609-6.609,6.616,6.616,0,0,0-6.609,6.609,6.616,6.616,0,0,1,6.609-6.609A6.616,6.616,0,0,1-2248.891-2783.5Zm-7.608.4v-4.4h2v3.6l1.688,2.923-1.847,1.066Z" transform="translate(2260 2788)" fill="#fff"/></g></g></svg>
-                            <div class="d-flex flex-column">
-                                <h3>Reflexivo</h3>
-                                <p>Avalia suas aprendizagens e experiências para promover seu crescimento pessoal</p>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-white text-center mt-5 mb-0 fw-bold">Esse é o aluno IB.</p>
-                    <p class="text-white text-center">E é esse aluno que o Porto forma — com excelência, propósito e visão de futuro.</p>
-                </div>
-                <div class="proposito">
-                    <h2 class="text-center text-primary mb-3">Escolhas com propósito: <br> orientação universitária e de carreira</h2>
-                    <h3 class="text-center fw-normal mb-4"><i>University and Career Counselling</i></h3>
-                    <p class="mb-2">Ao longo do Ensino Médio, os alunos do Porto recebem apoio especializado para construir trajetórias acadêmicas e profissionais no Brasil e no exterior.</p>                    
-                    <p class="mb-0"><span class="icon-circle">●</span> Orientação individual na escolha de disciplinas </p>
-                    <p class="mb-0"><span class="icon-circle">●</span> Apoio para ingresso em universidades no Brasil e no mundo </p>
-                    <p class="mb-0"><span class="icon-circle">●</span> Feiras e encontros com representantes de universidades nacionais e internacionais </p>
-                    <p class="mb-0"><span class="icon-circle">●</span> Suporte no processo de candidaturas</p>
-                    <p class="mt-1">Com uma equipe experiente, o Porto garante escolhas alinhadas aos sonhos e ao futuro de cada aluno.</p>
                 </div>
             </div>
-        </div>
-    </section>
-</body>
+        </section>
+        <section id="faq">
+            <div class="container">
+                <div class="col-md-8 offset-md-2 col-12">
+                    <h2 class="text-center text-primary mb-3">FAQ – Tire suas dúvidas sobre o IB no Porto</h2>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#333333" d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z"/></svg>
+                            <span>Qual é o perfil dos profissionais do IB DP no Porto Seguro?</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                O corpo docente do IB DP no Porto é composto de profissionais com sólida formação acadêmica,
+                                fluência em inglês e ampla experiência em educação internacional. Grande parte da equipe é
+                                formada por educadores expatriados, que trazem diversidade cultural e vivência global para
+                                enriquecer o ambiente de aprendizagem. Todos os professores possuem treinamentos oficiais
+                                certificados pelo IB DP, assegurando excelência na aplicação do currículo. São educadores com
+                                visão interdisciplinar, sensibilidade cultural e compromisso genuíno com o protagonismo estudantil.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#333333" d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z"/></svg>
+                            <span>A partir de qual série os alunos podem cursar o IB DP?</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                No Porto, o IB DP é oferecido a partir da 1ª série do Ensino Médio, momento em que os estudantes já têm maturidade necessária para assumir responsabilidades acadêmicas mais complexas e desenvolver competências como pensamento crítico, autonomia e consciência global.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#333333" d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z"/></svg>
+                            <span>O IB DP substitui o Ensino Médio regular?</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Não. No IB DP, o aluno obtém dupla certificação: o diploma IB DP e a conclusão regular do Ensino Médio brasileiro, conforme a Base Nacional Comum Curricular (BNCC).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#333333" d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z"/></svg>
+                            <span>Como o Porto apoia os alunos nas escolhas de carreira e universidades?</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Durante todo o Ensino Médio, os alunos recebem acompanhamento especializado para explorar seus interesses e planejar seus próximos passos acadêmicos e profissionais. A escola oferece orientação para escolha de disciplinas do IB DP, feiras de universidades brasileiras e internacionais, apoio nos processos de candidatura, entre outras ações – especialmente na 2ª e 3ª séries do Ensino Médio.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#333333" d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z"/></svg>
+                            <span>O IB DP é reconhecido no Brasil?</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                O IB DP é reconhecido por diversas instituições de excelência no país. Universidades como FGV, Insper, PUC, ESPM, IBMEC, FAAP, Mackenzie, Mauá, Einstein, FEI, Inteli, São Leopoldo Mandic e Sírio-Libanês aceitam o programa em seus processos seletivos. Além disso, os alunos do IB DP podem prestar o Enem e participar normalmente dos vestibulares tradicionais. A aceitação pode variar conforme o curso e a universidade; por isso, é importante consultar os critérios específicos de cada instituição.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#333333" d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z"/></svg>
+                            <span>O IB DP ajuda no ingresso em universidades internacionais?</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                O IB DP é aceito em mais de 2 mil universidades ao redor do mundo. Em muitos casos, ele facilita o processo seletivo, gera créditos ou isenção de disciplinas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#333333" d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z"/></svg>
+                            <span>Qual é o diferencial de cursar o IB DP no Colégio Visconde de Porto Seguro?</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                O Porto reúne uma combinação única de tradição, excelência acadêmica e experiência internacional que potencializa a oferta do IB DP. Com uma trajetória sólida em certificações globais – como o Abitur –, o Colégio já atua há anos dentro de uma cultura educacional que valoriza a interdisciplinaridade, o protagonismo estudantil e a visão de mundo. Outro diferencial está no investimento constante na formação de seus educadores: a equipe docente do Porto é altamente qualificada e preparada para conduzir programas de excelência, com domínio de metodologias internacionais e compromisso pedagógico consistente. Aliando essa estrutura a uma formação plurilíngue desde os primeiros anos, o Porto oferece uma experiência IB DP verdadeiramente integrada, sólida e transformadora, preparando o aluno para atuar com autonomia, consciência global e excelência acadêmica em qualquer lugar do mundo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#333333" d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z"/></svg>
+                            <span>Por que a certificação IB DP é oferecida apenas no Campus Panamby?</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                O Colégio já oferece, nos campi Valinhos e Morumbi, o Currículo Internacional Alemão, que possibilita a certificação Abitur – reconhecimento de excelência, válido mundialmente. O IB DP foi implementado no Campus Panamby considerando o planejamento pedagógico e estrutural do Colégio, que prevê etapas específicas para a introdução de novos programas internacionais. Essa iniciativa amplia as opções acadêmicas disponíveis e reforça a missão do Porto de preparar alunos para um mundo global, exigente e em constante transformação. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <footer>
+        <script>
+            const questions = document.querySelectorAll(".faq-question");
+
+            questions.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                const answer = btn.nextElementSibling;
+
+                questions.forEach((other) => {
+                if (other !== btn) {
+                    other.classList.remove("active");
+                    other.nextElementSibling.classList.remove("open");
+                }
+                });
+
+                btn.classList.toggle("active");
+                answer.classList.toggle("open");
+            });
+            });
+        </script>
+    </footer>
 </html>

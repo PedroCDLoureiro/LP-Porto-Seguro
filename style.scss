@@ -305,3 +305,53 @@ h3{
         }
     }
 }
+
+// FAQ
+
+#faq {
+    background-color: #DDDDDD;
+    padding-top: 72px;
+    .container{
+        padding-bottom: 200px;
+    }
+    .faq-item {
+        padding: 15px 0;
+    }
+    .faq-question {
+        color: $font-color;
+        width: 100%;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-weight: bold;
+        text-align: left;
+        padding: 0;
+        svg {
+            width: 20px;
+            transition: all ease .3s;
+        }
+        &.active {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .faq-answer {
+        padding-left: 35px;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all ease .6s;
+        p{
+            margin-bottom: 0;
+        }
+        &.open {
+            opacity: 1;
+            height: max-content;
+        }
+    }
+}
