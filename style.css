@@ -166,7 +166,7 @@ h3 {
 
 #trajetoria-ibdp {
   background-color: #033B74;
-  background-image: url(assets/bg-trajetoria.png);
+  background-image: url(assets/bg-trajetoria.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -229,4 +229,46 @@ h3 {
 }
 #habilidades-para-a-vida #cards-habilidades .card p {
   line-height: 20px;
+}
+
+#perfil-do-aluno {
+  background-image: url(assets/bg-proposito.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  margin-bottom: 70px;
+}
+#perfil-do-aluno .content-perfil {
+  padding: 70px 70px 50px;
+  border-radius: 24px;
+}
+#perfil-do-aluno .content-perfil #cards-perfil {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 50px;
+}
+#perfil-do-aluno .content-perfil #cards-perfil .perfil {
+  align-items: center;
+  gap: 15px;
+}
+#perfil-do-aluno .content-perfil #cards-perfil .perfil svg {
+  width: 48px;
+  min-width: 48px;
+}
+#perfil-do-aluno .content-perfil #cards-perfil .perfil h3, #perfil-do-aluno .content-perfil #cards-perfil .perfil p {
+  font-size: 16px;
+  line-height: 23px;
+}
+#perfil-do-aluno .content-perfil #cards-perfil .perfil h3 {
+  color: #38CEFF;
+  margin-bottom: 0;
+}
+#perfil-do-aluno .content-perfil #cards-perfil .perfil p {
+  color: #FFF;
+  margin-bottom: 0;
+}
+#perfil-do-aluno .proposito {
+  margin-top: 90px;
+}
+#perfil-do-aluno .proposito h2 {
+  line-height: 40px;
 }/*# sourceMappingURL=style.css.map */

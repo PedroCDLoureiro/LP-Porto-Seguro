@@ -191,9 +191,9 @@ h3{
 
 #trajetoria-ibdp{
     background-color: $primary-color;
-    background-image: url(assets/bg-trajetoria.png);
+    background-image: url(assets/bg-trajetoria.svg);
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: cover;
     .timeline{
         border: 2px solid #DDDDDD;
         border-radius: 8px;
@@ -258,6 +258,50 @@ h3{
             p{
                 line-height: 20px;
             }
+        }
+    }
+}
+
+// Perfil do aluno
+
+#perfil-do-aluno{
+    background-image: url(assets/bg-proposito.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin-bottom: 70px;
+    .content-perfil{
+        padding: 70px 70px 50px;
+        border-radius: 24px;
+        #cards-perfil{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 50px;
+            .perfil{
+                align-items: center;
+                gap: 15px;
+                svg{
+                    width: 48px;
+                    min-width: 48px;
+                }
+                h3, p{
+                    font-size: $font-size-small;
+                    line-height: $line-height-font-size-small;
+                }
+                h3{
+                    color: $tertiary-color;
+                    margin-bottom: 0;
+                }
+                p{
+                    color: #FFF;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .proposito{
+        margin-top: 90px;
+        h2{
+            line-height: 40px;
         }
     }
 }
