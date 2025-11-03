@@ -625,6 +625,7 @@
                 </div>
             </div>
         </section>
+        <a href="#converse-com-a-equipe" id="btn-float">Quero saber mais sobre o IB Porto</a>
     </body>
     <footer>
 
@@ -851,6 +852,19 @@
                     }
                     });
                 });
+            });
+            
+            // BOTÃO FLUTUANTE
+
+            document.addEventListener("scroll", () => {
+                const btnFloat = document.getElementById("btn-float");
+                if (!btnFloat) return;
+
+                if (window.scrollY > window.innerHeight) {
+                    btnFloat.classList.add("active");
+                } else {
+                    btnFloat.classList.remove("active");
+                }
             });
 
         </script>
