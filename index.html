@@ -567,7 +567,7 @@
                 });
             });
 
-            // FORMS
+            // SELEÇÃO DE FORMULÁRIO
             const radios = document.querySelectorAll('input[name="aluno"]');
             const formAluno = document.getElementById('form-aluno');
             const formNaoAluno = document.getElementById('form-nao-aluno');
@@ -584,7 +584,7 @@
                 });
             });
 
-            // ADICIONAR/REMOVER ALUNO FORM
+            // ADICIONAR/REMOVER ALUNO FORMULÁRIO
             
             const adicionarAluno = document.getElementById("adicionarAluno");
             const container = document.getElementById("alunosContainer");
@@ -684,6 +684,37 @@
 
             // Estado inicial
             atualizarNumeracao();
+
+            // ENVIO FORMULÁRIO
+
+            document.addEventListener("DOMContentLoaded", () => {
+                // Seleciona ambos os formulários
+                const forms = document.querySelectorAll("form.formulario");
+
+                forms.forEach(form => {
+                    form.addEventListener("submit", async (e) => {
+                    e.preventDefault();
+                    
+                    const btn = form.querySelector("button[type='submit']");
+                    btn.disabled = true;
+                    btn.textContent = "Enviando...";
+
+                    try {
+                        // Simula um envio
+                        await new Promise(resolve => setTimeout(resolve, 2000));
+
+                        // ✅ Redireciona para a página de agradecimento
+                        window.location.href = "obrigado.html";
+                    } catch (err) {
+                        console.error("Erro ao enviar formulário:", err);
+                        alert("Ocorreu um erro ao enviar. Tente novamente.");
+                    } finally {
+                        btn.disabled = false;
+                        btn.textContent = "Confirmar";
+                    }
+                    });
+                });
+            });
 
         </script>
     </footer>
