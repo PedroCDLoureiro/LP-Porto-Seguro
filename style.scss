@@ -820,4 +820,13 @@ footer{
     #btn-float{
         width: 160px;
     }
+    #obrigado{
+        background-position: bottom;
+        .texto{
+            padding-top: 30px;
+            align-items: baseline;
+            border: none;
+            padding-right: 0;
+        }
+    }
 }   

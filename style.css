@@ -711,4 +711,13 @@ footer svg {
   #btn-float {
     width: 160px;
   }
+  #obrigado {
+    background-position: bottom;
+  }
+  #obrigado .texto {
+    padding-top: 30px;
+    align-items: baseline;
+    border: none;
+    padding-right: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
