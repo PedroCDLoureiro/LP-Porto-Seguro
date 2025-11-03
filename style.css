@@ -533,7 +533,7 @@ h3 {
 }
 
 #localizacoes {
-  padding: 30px 0;
+  padding: 30px 0 40px;
   margin-top: 0;
 }
 #localizacoes .locais {
@@ -555,4 +555,14 @@ h3 {
 }
 #localizacoes .locais .local:last-child {
   border: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+footer svg {
+  width: 160px;
 }/*# sourceMappingURL=style.css.map */
