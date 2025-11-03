@@ -617,6 +617,9 @@ footer svg {
   #trajetoria-ibdp .timeline .timeline-conteudo div {
     padding: 10px 3px;
   }
+  #converse-com-a-equipe .form-row.input-2, #converse-com-a-equipe .form-row.input-3, #converse-com-a-equipe .form-row.input-2-1 {
+    grid-template-columns: 1fr;
+  }
   #habilidades-para-a-vida #cards-habilidades {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -643,6 +646,10 @@ footer svg {
     font-size: 16px;
     line-height: 23px;
     padding: 8px 16px;
+  }
+  #banner .container .content-banner {
+    left: 0;
+    padding-left: 15px;
   }
   #international-baccalaureate #cards-ib {
     gap: 15px;

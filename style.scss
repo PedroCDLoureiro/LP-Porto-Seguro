@@ -681,6 +681,15 @@ footer{
             }
         }
     }
+    #converse-com-a-equipe {
+        .form-row{
+            &.input-2,
+            &.input-3,
+            &.input-2-1{
+                grid-template-columns: 1fr;
+            }
+        }
+    }
     #habilidades-para-a-vida #cards-habilidades {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -711,6 +720,14 @@ footer{
             font-size: $font-size-small;
             line-height: $line-height-font-size-small;
             padding: 8px 16px;
+        }
+    }
+    #banner {
+        .container {
+            .content-banner {
+                left: 0;
+                padding-left: 15px;
+            }
         }
     }
     #international-baccalaureate {
