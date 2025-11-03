@@ -174,8 +174,9 @@ h3 {
 #ibdp {
   background-image: url("assets/bg-ibdp.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
+  background-size: contain;
+  background-position: bottom right;
+  background-color: #033B74;
 }
 #ibdp .texts {
   width: 50%;
@@ -602,11 +603,6 @@ footer svg {
   #international-baccalaureate #cards-ib {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-  }
-  #ibdp {
-    background-size: contain;
-    background-position: bottom right;
-    background-color: #033B74;
   }
   #aprendizado-ibdp h2 {
     margin-bottom: 50px;

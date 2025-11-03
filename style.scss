@@ -187,8 +187,9 @@ h3{
 #ibdp{
     background-image: url('assets/bg-ibdp.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
+    background-size: contain;
+    background-position: bottom right;
+    background-color: $primary-color;
     .texts{
         width: 50%;
     }
@@ -658,11 +659,6 @@ footer{
             grid-template-columns: repeat(2, 1fr);
             gap: 30px;
         }
-    }
-    #ibdp{
-        background-size: contain;
-        background-position: bottom right;
-        background-color: $primary-color;
     }
     #aprendizado-ibdp {
         h2{
