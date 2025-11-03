@@ -536,3 +536,49 @@ h3{
         padding-right: 50px;
     }
 }
+
+// Possibilidades
+
+#possibilidades{
+    position: relative;
+    z-index: 0;
+    padding: 100px 140px;
+    .textos{
+        color: #FFF;
+        .colunas{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+            .col-text{
+                h3{
+                    margin-bottom: 20px;
+                }
+                &:first-child{
+                    h3{
+                        color: #8DC5FF;
+                    }
+                }
+                &:last-child{
+                    h3{
+                        color: #FFE783;
+                    }
+                }
+            }
+        }
+    }
+    a{
+        border-color: #FFF;
+        color: #FFF;
+    }
+    &::before{
+        content: '';
+        background-image: url(assets/before-possibilidades.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}

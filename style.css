@@ -492,4 +492,42 @@ h3 {
   align-items: center;
   border-right: 2px solid #DDDDDD;
   padding-right: 50px;
+}
+
+#possibilidades {
+  position: relative;
+  z-index: 0;
+  padding: 100px 140px;
+}
+#possibilidades .textos {
+  color: #FFF;
+}
+#possibilidades .textos .colunas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+#possibilidades .textos .colunas .col-text h3 {
+  margin-bottom: 20px;
+}
+#possibilidades .textos .colunas .col-text:first-child h3 {
+  color: #8DC5FF;
+}
+#possibilidades .textos .colunas .col-text:last-child h3 {
+  color: #FFE783;
+}
+#possibilidades a {
+  border-color: #FFF;
+  color: #FFF;
+}
+#possibilidades::before {
+  content: "";
+  background-image: url(assets/before-possibilidades.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
