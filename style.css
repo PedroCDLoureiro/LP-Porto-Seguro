@@ -469,7 +469,7 @@ h3 {
 #converse-com-a-equipe form {
   display: none;
   background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.3));
-  padding: 0 60px 60px 0;
+  padding: 0 60px 30px 0;
 }
 #converse-com-a-equipe form #alunosContainer .aluno .aluno-header {
   display: flex;
@@ -520,6 +520,7 @@ h3 {
   position: relative;
   z-index: 0;
   padding: 100px 140px;
+  margin-top: 0;
 }
 #possibilidades .textos {
   color: #FFF;
@@ -694,9 +695,6 @@ footer svg {
   #converse-com-a-equipe form {
     background: none;
     padding: 0;
-  }
-  #possibilidades {
-    margin-top: 0;
   }
   #possibilidades .textos .colunas {
     gap: 15px;
