@@ -382,26 +382,310 @@
                 </div>
             </div>
         </section>
+        <section id="converse-com-a-equipe">
+            <div class="container">
+                <div class="col-md-5 col-12">
+                    <h2 class="text-primary mb-4">Converse com a equipe <br> do IB Porto</h2>
+    
+                    <!-- Grupo do radio -->
+                    <div class="d-flex gap-4 mb-4 radio-aluno">
+                        <label>
+                            <input type="radio" name="aluno" value="sim" checked>
+                            É aluno do Porto
+                        </label>
+                        <label>
+                            <input type="radio" name="aluno" value="nao">
+                            Não é aluno do Porto
+                        </label>
+                    </div>
+    
+                    <!-- Formulário para aluno do Porto -->
+                    <form id="form-aluno" class="formulario ativo">
+                        <h3>Responsável</h3>
+                        <div class="form-row input-1">
+                            <div class="field">
+                                <label for="nome_aluno">Nome completo</label>
+                                <input type="text" id="nome_aluno" name="nome_aluno">
+                            </div>
+                            <div class="field">
+                                <label for="cpf_aluno">CPF:</label>
+                                <input type="text" id="cpf_aluno" name="cpf_aluno" maxlength="14">
+                            </div>
+                            <div class="field">
+                                <label for="email_aluno">E-mail</label>
+                                <input type="email" id="email_aluno" name="email_aluno">
+                            </div>                            
+                        </div>
+                        
+                        <h3 class="mt-3">Aluno</h3>
+                        <div class="form-row input-1">
+                            <div class="field">
+                                <label for="matricula_aluno">Matrícula</label>
+                                <input type="text" id="matricula_aluno" name="matricula_aluno">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn primary-btn mt-5">Confirmar</button>
+                    </form>
+    
+                    <!-- Formulário para não aluno -->
+                    <form id="form-nao-aluno" class="formulario">
+                        <h3>Responsável</h3>
+                        <div class="form-row input-1 mb-3">
+                            <div class="field">
+                                <label for="nome_responsavel">Nome completo</label>
+                                <input type="text" id="nome_responsavel" name="nome_responsavel">
+                            </div>
+                        </div>
+
+                        <div class="form-row input-3 mb-3">
+                            <div class="field">
+                                <label for="cpf_passaporte_responsavel">CPF ou Passaporte</label>
+                                <input type="text" id="cpf_passaporte_responsavel" name="cpf_passaporte_responsavel">
+                            </div>
+                            <div class="field">
+                                <label for="telefone_responsavel">Telefone</label>
+                                <input type="text" id="telefone_responsavel" name="telefone_responsavel" placeholder="(DDD) 0000-0000">
+                            </div>
+                            <div class="field">
+                                <label for="pais_origem_responsavel">País de origem</label>
+                                <select id="pais_origem_responsavel" name="pais_origem_responsavel">
+                                    <option>Brasil</option>
+                                    <option>Outro</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <div class="form-row input-1 mb-4">
+                            <div class="field">
+                                <label for="email_responsavel">E-mail</label>
+                                <input type="email" id="email_responsavel" name="email_responsavel">
+                            </div>
+                        </div>
+                        
+                        <div id="alunosContainer">
+                            <div class="aluno">
+                                <div class="aluno-header">
+                                    <h3>Estudante</h3>
+                                </div>
+
+                                <div class="form-row input-2-1 mb-3">
+                                    <div class="field">
+                                        <label for="nome_estudante">Nome completo</label>
+                                        <input type="text" id="nome_estudante" name="nome_estudante[]">
+                                    </div>
+                                    <div class="field">
+                                        <label for="data_nascimento">Data de nascimento</label>
+                                        <input type="date" id="data_nascimento" name="data_nascimento[]">
+                                    </div>
+                                </div>
+
+                                <div class="form-row input-2 mb-3">
+                                    <div class="field">
+                                        <label>É filho(a) de ex-aluno(a)?</label>
+                                        <div class="d-flex gap-4">
+                                            <label for="filho_sim"><input type="radio" id="filho_sim" name="filho[0]" value="sim"> Sim</label>
+                                            <label for="filho_nao"><input type="radio" id="filho_nao" name="filho[0]" value="nao" checked> Não</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label>É irmão(ã) de aluno(a)?</label>
+                                        <div class="d-flex gap-4">
+                                            <label for="irmao_sim"><input type="radio" id="irmao_sim" name="irmao[0]" value="sim"> Sim</label>
+                                            <label for="irmao_nao"><input type="radio" id="irmao_nao" name="irmao[0]" value="nao" checked> Não</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row input-3 mb-3">
+                                    <div class="field">
+                                        <label for="ano_interesse">Ano de interesse</label>
+                                        <select id="ano_interesse" name="ano_interesse[]">
+                                            <option value="2026">2026</option>
+                                            <option value="2027">2027</option>
+                                            <option value="2028">2028</option>
+                                            <option value="2029">2029</option>
+                                            <option value="2030">2030</option>
+                                        </select>
+                                    </div>
+                                    <div class="field">
+                                        <label for="campus">Campus</label>
+                                        <select id="campus" name="campus[]">
+                                            <option>Panamby</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row input-1">
+                                    <div class="field">
+                                        <label for="escola_origem">Escola de origem</label>
+                                        <input type="text" id="escola_origem" name="escola_origem[]">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <button type="button" id="adicionarAluno" class="btn transparent-btn mt-4">
+                                Adicionar aluno
+                            </button>
+                        </div>
+
+                        <div class="termos">
+                            <label>
+                                <input type="checkbox" name="informativos">
+                                <p>
+                                    Aceito receber informativos promocionais do Colégio Visconde de Porto Seguro por e-mail, SMS e mensagens eletrônicas
+                                </p>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn primary-btn mt-5">Confirmar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </body>
     <footer>
         <script>
+
+            // FAQ
             const questions = document.querySelectorAll(".faq-question");
 
             questions.forEach((btn) => {
-            btn.addEventListener("click", () => {
-                const answer = btn.nextElementSibling;
+                btn.addEventListener("click", () => {
+                    const answer = btn.nextElementSibling;
 
-                questions.forEach((other) => {
-                if (other !== btn) {
-                    other.classList.remove("active");
-                    other.nextElementSibling.classList.remove("open");
-                }
+                    questions.forEach((other) => {
+                    if (other !== btn) {
+                        other.classList.remove("active");
+                        other.nextElementSibling.classList.remove("open");
+                    }
+                    });
+
+                    btn.classList.toggle("active");
+                    answer.classList.toggle("open");
                 });
+            });
 
-                btn.classList.toggle("active");
-                answer.classList.toggle("open");
+            // FORMS
+            const radios = document.querySelectorAll('input[name="aluno"]');
+            const formAluno = document.getElementById('form-aluno');
+            const formNaoAluno = document.getElementById('form-nao-aluno');
+
+            radios.forEach(radio => {
+                radio.addEventListener('change', () => {
+                    if (radio.value === 'sim') {
+                        formAluno.classList.add('ativo');
+                        formNaoAluno.classList.remove('ativo');
+                    } else {
+                        formAluno.classList.remove('ativo');
+                        formNaoAluno.classList.add('ativo');
+                    }
+                });
             });
+
+            // ADICIONAR/REMOVER ALUNO FORM
+            
+            const adicionarAluno = document.getElementById("adicionarAluno");
+            const container = document.getElementById("alunosContainer");
+
+            // Gera IDs/for únicos e agrupa radios por aluno
+            function atualizarIds(aluno, index) {
+            aluno.querySelectorAll("input, select, label").forEach(el => {
+                if (el.id) {
+                    const base = el.id.split("_")[0];
+                    el.id = `${base}_${index}`;
+                }
+                if (el.htmlFor) {
+                    const base = el.htmlFor.split("_")[0];
+                    el.htmlFor = `${base}_${index}`;
+                }
             });
+
+            // Radios: names independentes por aluno e IDs únicos por opção
+            aluno.querySelectorAll('input[type="radio"]').forEach(radio => {
+                const group = radio.name.split('[')[0]; // 'filho' ou 'irmao'
+                radio.name = `${group}[${index - 1}]`;
+                const value = radio.value;              // 'sim' ou 'nao'
+                radio.id = `${group}_${value}_${index}`;
+                const label = radio.closest("label");
+                if (label) label.htmlFor = radio.id;
+            });
+            }
+
+            // Cria/remonta título e botão remover conforme quantidade
+            function atualizarNumeracao() {
+            const alunos = container.querySelectorAll(".aluno");
+
+            alunos.forEach((aluno, index) => {
+                const header = aluno.querySelector(".aluno-header");
+                const titulo = header.querySelector("h3");
+
+                // Remover quaisquer botões clonados “mudos”
+                header.querySelectorAll(".remover-aluno").forEach(b => b.remove());
+
+                atualizarIds(aluno, index + 1);
+
+                if (alunos.length > 1) {
+                    titulo.textContent = `Estudante ${index + 1}`;
+                    // INSERE o botão remover (sem listener aqui – delegação cuidará)
+                    const btn = document.createElement("button");
+                    btn.type = "button";
+                    btn.className = "btn remover-aluno";
+                    btn.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="16" height="16" style="vertical-align:middle; margin-right:6px;">
+                        <path fill="#333333" d="M232.7 69.9C237.1 56.8 249.3 48 263.1 48L377 48C390.8 48 403 56.8 407.4 69.9L416 96L512 96C529.7 96 544 110.3 544 128C544 145.7 529.7 160 512 160L128 160C110.3 160 96 145.7 96 128C96 110.3 110.3 96 128 96L224 96L232.7 69.9zM128 208L512 208L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 208zM216 272C202.7 272 192 282.7 192 296L192 488C192 501.3 202.7 512 216 512C229.3 512 240 501.3 240 488L240 296C240 282.7 229.3 272 216 272zM320 272C306.7 272 296 282.7 296 296L296 488C296 501.3 306.7 512 320 512C333.3 512 344 501.3 344 488L344 296C344 282.7 333.3 272 320 272zM424 272C410.7 272 400 282.7 400 296L400 488C400 501.3 410.7 512 424 512C437.3 512 448 501.3 448 488L448 296C448 282.7 437.3 272 424 272z"/>
+                    </svg>
+                    Remover
+                    `;
+                    header.appendChild(btn);
+                } else {
+                    titulo.textContent = "Estudante";
+                }
+            });
+            }
+
+            // Delegação de eventos: captura qualquer clique em .remover-aluno (inclusive clonados)
+            container.addEventListener("click", (e) => {
+                const removerBtn = e.target.closest(".remover-aluno");
+                if (!removerBtn) return;
+
+                const alunos = container.querySelectorAll(".aluno");
+                if (alunos.length <= 1) return; // não remove se for o único
+
+                const bloco = removerBtn.closest(".aluno");
+                if (bloco) {
+                    bloco.remove();
+                    atualizarNumeracao();
+                }
+            });
+
+            // Botão “Adicionar aluno”
+            adicionarAluno.addEventListener("click", () => {
+                const primeiroAluno = container.firstElementChild;
+                const novoAluno = primeiroAluno.cloneNode(true);
+
+                // Limpa valores (radios voltam para 'nao')
+                novoAluno.querySelectorAll("input").forEach(input => {
+                    if (input.type === "radio") {
+                        input.checked = (input.value === "nao");
+                    } else {
+                        input.value = "";
+                    }
+                });
+                novoAluno.querySelectorAll("select").forEach(select => select.selectedIndex = 0);
+
+                // Remove quaisquer botões 'remover' que vieram no clone
+                novoAluno.querySelectorAll(".remover-aluno").forEach(b => b.remove());
+
+                container.appendChild(novoAluno);
+                atualizarNumeracao();
+            });
+
+            // Estado inicial
+            atualizarNumeracao();
+
         </script>
     </footer>
 </html>

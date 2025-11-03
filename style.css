@@ -83,7 +83,7 @@ h3 {
   font-size: 20px;
   text-decoration: none;
   font-weight: bold;
-  border: 1px solid;
+  border: 2px solid;
   border-radius: 30px;
   padding: 6px 18px;
   width: -moz-max-content;
@@ -107,6 +107,16 @@ h3 {
   background-color: #DC2730;
   border-color: #DC2730;
   color: #FFF;
+}
+
+.transparent-btn {
+  background-color: transparent;
+  border-color: #033B74;
+  color: #033B74;
+}
+.transparent-btn:hover {
+  color: #033B74;
+  border-color: #033B74;
 }
 
 #banner {
@@ -318,4 +328,117 @@ h3 {
   opacity: 1;
   height: -moz-max-content;
   height: max-content;
+}
+
+#converse-com-a-equipe {
+  background-image: url(assets/bg-forms.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#converse-com-a-equipe h2 {
+  line-height: 40px;
+}
+#converse-com-a-equipe h3 {
+  color: #033B74;
+  margin-bottom: 5px;
+}
+#converse-com-a-equipe .form-row {
+  display: grid;
+  gap: 32px;
+}
+#converse-com-a-equipe .form-row.input-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+#converse-com-a-equipe .form-row.input-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+#converse-com-a-equipe .form-row.input-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+#converse-com-a-equipe .form-row.input-2-1 {
+  grid-template-columns: 2fr 1fr;
+}
+#converse-com-a-equipe input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #033B74;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: all 0.2s ease;
+}
+#converse-com-a-equipe select,
+#converse-com-a-equipe input[type=text],
+#converse-com-a-equipe input[type=email],
+#converse-com-a-equipe input[type=date],
+#converse-com-a-equipe input[type=number] {
+  font-size: 16px;
+  color: #033B74;
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+  padding: 5px 10px;
+  outline: none;
+  width: 100%;
+  height: 40px;
+}
+#converse-com-a-equipe input[type=radio]:checked::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: #DC2730;
+  border-radius: 50%;
+}
+#converse-com-a-equipe button[type=submit],
+#converse-com-a-equipe #adicionarAluno {
+  padding: 6px 30px;
+}
+#converse-com-a-equipe .radio-aluno label {
+  cursor: pointer;
+}
+#converse-com-a-equipe label {
+  display: flex;
+  align-items: center;
+  color: #033B74;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 3px;
+}
+#converse-com-a-equipe form {
+  display: none;
+  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.3));
+  padding: 0 60px 60px 0;
+}
+#converse-com-a-equipe form #alunosContainer .aluno .aluno-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+#converse-com-a-equipe form #alunosContainer .aluno .aluno-header .remover-aluno {
+  font-size: 16px;
+  line-height: 23px;
+  color: #333333;
+  border-color: #333333;
+  padding: 3px 18px;
+}
+#converse-com-a-equipe form #alunosContainer .aluno:nth-child(n+2) {
+  margin-top: 24px;
+}
+#converse-com-a-equipe form .termos {
+  margin-top: 20px;
+}
+#converse-com-a-equipe form .termos label {
+  align-items: flex-start;
+  gap: 8px;
+}
+#converse-com-a-equipe form .termos label p {
+  color: #333333;
+}
+#converse-com-a-equipe form.ativo {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
