@@ -370,7 +370,8 @@ h3{
 #converse-com-a-equipe{
     background-image: url(assets/bg-forms.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: right bottom;
     h2{
         line-height: 40px;
     }
@@ -405,6 +406,41 @@ h3{
         cursor: pointer;
         margin-right: 8px;
         transition: all 0.2s ease;
+    }
+    input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        min-width: 18px;
+        width: 18px;
+        height: 18px;
+        border: 2px solid $primary-color;
+        border-radius: 2px;
+        background-color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        margin-top: 4px;
+        transition: all 0.2s ease;
+        &:focus {
+            outline: 2px solid rgba($primary-color, 0.4);
+            outline-offset: 2px;
+        }
+        &:checked {
+            background-color: $primary-color;
+            border-color: $primary-color;
+        }
+        &:checked::after {
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 0px;
+            width: 5px;
+            height: 10px;
+            border: solid #fff;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
     }
     select,
     input[type="text"],
@@ -469,7 +505,7 @@ h3{
             }
         }
         .termos{
-            margin-top: 20px;
+            margin-top: 30px;
             label{
                 align-items: flex-start;
                 gap: 8px;
@@ -481,5 +517,22 @@ h3{
         &.ativo{
             display: block;
         }
+    }
+}
+
+// Página Obrigado
+
+#obrigado{
+    background-image: url(assets/bg-obrigado.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 100dvw;
+    height: 100dvh;
+    .texto{
+        display: flex;
+        align-items: center;
+        border-right: 2px solid #DDDDDD;
+        padding-right: 50px;
     }
 }

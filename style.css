@@ -333,7 +333,8 @@ h3 {
 #converse-com-a-equipe {
   background-image: url(assets/bg-forms.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: right bottom;
 }
 #converse-com-a-equipe h2 {
   line-height: 40px;
@@ -371,6 +372,41 @@ h3 {
   cursor: pointer;
   margin-right: 8px;
   transition: all 0.2s ease;
+}
+#converse-com-a-equipe input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  min-width: 18px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #033B74;
+  border-radius: 2px;
+  background-color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  margin-top: 4px;
+  transition: all 0.2s ease;
+}
+#converse-com-a-equipe input[type=checkbox]:focus {
+  outline: 2px solid rgba(3, 59, 116, 0.4);
+  outline-offset: 2px;
+}
+#converse-com-a-equipe input[type=checkbox]:checked {
+  background-color: #033B74;
+  border-color: #033B74;
+}
+#converse-com-a-equipe input[type=checkbox]:checked::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 #converse-com-a-equipe select,
 #converse-com-a-equipe input[type=text],
@@ -430,7 +466,7 @@ h3 {
   margin-top: 24px;
 }
 #converse-com-a-equipe form .termos {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 #converse-com-a-equipe form .termos label {
   align-items: flex-start;
@@ -441,4 +477,19 @@ h3 {
 }
 #converse-com-a-equipe form.ativo {
   display: block;
+}
+
+#obrigado {
+  background-image: url(assets/bg-obrigado.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  width: 100dvw;
+  height: 100dvh;
+}
+#obrigado .texto {
+  display: flex;
+  align-items: center;
+  border-right: 2px solid #DDDDDD;
+  padding-right: 50px;
 }/*# sourceMappingURL=style.css.map */
