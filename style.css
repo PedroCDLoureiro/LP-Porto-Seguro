@@ -587,4 +587,127 @@ footer {
 }
 footer svg {
   width: 160px;
+}
+
+@media (max-width: 991px) {
+  h2 {
+    font-size: 25px;
+    line-height: 32px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  #international-baccalaureate #cards-ib {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  #ibdp {
+    background-size: contain;
+    background-position: bottom right;
+    background-color: #033B74;
+  }
+  #aprendizado-ibdp h2 {
+    margin-bottom: 50px;
+  }
+  #trajetoria-ibdp .timeline .timeline-semestres {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  #trajetoria-ibdp .timeline .timeline-semestres div {
+    padding: 15px;
+  }
+  #trajetoria-ibdp .timeline .timeline-conteudo div {
+    padding: 10px 3px;
+  }
+  #habilidades-para-a-vida #cards-habilidades {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #possibilidades {
+    padding: 80px 0;
+  }
+  #localizacoes .locais {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 100dvw;
+  }
+  body {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+  .btn.btn-large {
+    font-size: 16px;
+    line-height: 23px;
+    padding: 8px 16px;
+  }
+  #international-baccalaureate #cards-ib {
+    gap: 15px;
+  }
+  #ibdp {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(assets/bg-ibdp.png) no-repeat center/cover;
+    background-position: right;
+  }
+  #ibdp .texts {
+    width: 100%;
+  }
+  #trajetoria-ibdp .timeline .timeline-header div,
+  #trajetoria-ibdp .timeline .timeline-conteudo div {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  #trajetoria-ibdp .timeline .timeline-semestres {
+    font-size: 12px;
+    line-height: 1;
+  }
+  #trajetoria-ibdp .timeline .timeline-semestres div {
+    padding: 5px;
+  }
+  #trajetoria-ibdp .timeline .timeline-conteudo div {
+    font-size: 9px;
+    line-height: 1;
+  }
+  #habilidades-para-a-vida #cards-habilidades {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #perfil-do-aluno .content-perfil {
+    padding: 30px 15px 15px;
+  }
+  #perfil-do-aluno .content-perfil #cards-perfil {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px 15px;
+  }
+  #faq .container {
+    padding-bottom: 60px;
+  }
+  #converse-com-a-equipe {
+    background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(assets/bg-forms.png) no-repeat center/cover;
+    background-position: right;
+    padding-bottom: 30px;
+  }
+  #converse-com-a-equipe form {
+    background: none;
+    padding: 0;
+  }
+  #possibilidades {
+    margin-top: 0;
+  }
+  #possibilidades .textos .colunas {
+    gap: 15px;
+  }
+  #localizacoes .locais {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #localizacoes .locais .local:nth-child(even) {
+    border: none;
+  }
+  #btn-float {
+    width: 160px;
+  }
 }/*# sourceMappingURL=style.css.map */
