@@ -717,9 +717,6 @@ footer{
 }
 
 @media (max-width: 767px) {
-    .container{
-        max-width: 100dvw;
-    }
     body{
         font-size: $font-size-small;
         line-height: $line-height-font-size-small;
@@ -778,24 +775,43 @@ footer{
     }
     #trajetoria-ibdp{
         .timeline{
-            .timeline-header, 
-            .timeline-conteudo{
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr 1fr;
+            .timeline-header{
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                grid-template-rows: 2fr 2fr 3fr;
                 div{
-                    font-size: $font-size-xsmall;
-                    line-height: 16px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: $font-size-small;
+                    line-height: $line-height-font-size-small;
+                    padding: 30px 10px;
+                    text-align: left;
                 }
-            }
+            }   
             .timeline-semestres{
-                font-size: 12px;
-                line-height: 1;
+                grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr;
                 div{
-                    padding: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 12px;
+                    line-height: 1;
+                    padding: 15px 10px;
                 }
             }
             .timeline-conteudo{
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                grid-template-rows: 1fr 4fr 2fr;
                 div{
-                    font-size: 9px;
+                    font-size: 12px;
                     line-height: 1;
+                    padding: 15px 10px;
+                    &.bg-secondary{
+                        grid-column: auto;
+                    }
                 }
             }
         }
@@ -856,23 +872,6 @@ footer{
             align-items: baseline;
             border: none;
             padding-right: 0;
-        }
-    }
-}
-
-@media (max-width: 400px) {
-    #trajetoria-ibdp{
-        .timeline{
-            .timeline-header, 
-            .timeline-conteudo{
-                div{
-                    font-size: 12px;
-                    line-height: 14px;
-                }
-            }
-            .timeline-semestres{
-                font-size: 10px;
-            }
         }
     }
 }

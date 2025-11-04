@@ -644,9 +644,6 @@ footer svg {
   }
 }
 @media (max-width: 767px) {
-  .container {
-    max-width: 100dvw;
-  }
   body {
     font-size: 16px;
     line-height: 23px;
@@ -687,21 +684,46 @@ footer svg {
   #aprendizado-ibdp .container .list:last-child p {
     padding-left: 0;
   }
-  #trajetoria-ibdp .timeline .timeline-header div,
-  #trajetoria-ibdp .timeline .timeline-conteudo div {
-    font-size: 14px;
-    line-height: 16px;
+  #trajetoria-ibdp .timeline {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+  }
+  #trajetoria-ibdp .timeline .timeline-header {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-rows: 2fr 2fr 3fr;
+  }
+  #trajetoria-ibdp .timeline .timeline-header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 23px;
+    padding: 30px 10px;
+    text-align: left;
   }
   #trajetoria-ibdp .timeline .timeline-semestres {
-    font-size: 12px;
-    line-height: 1;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr;
   }
   #trajetoria-ibdp .timeline .timeline-semestres div {
-    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1;
+    padding: 15px 10px;
+  }
+  #trajetoria-ibdp .timeline .timeline-conteudo {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 1fr 4fr 2fr;
   }
   #trajetoria-ibdp .timeline .timeline-conteudo div {
-    font-size: 9px;
+    font-size: 12px;
     line-height: 1;
+    padding: 15px 10px;
+  }
+  #trajetoria-ibdp .timeline .timeline-conteudo div.bg-secondary {
+    grid-column: auto;
   }
   #habilidades-para-a-vida #cards-habilidades {
     grid-template-columns: repeat(2, 1fr);
@@ -744,15 +766,5 @@ footer svg {
     align-items: baseline;
     border: none;
     padding-right: 0;
-  }
-}
-@media (max-width: 400px) {
-  #trajetoria-ibdp .timeline .timeline-header div,
-  #trajetoria-ibdp .timeline .timeline-conteudo div {
-    font-size: 12px;
-    line-height: 14px;
-  }
-  #trajetoria-ibdp .timeline .timeline-semestres {
-    font-size: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
