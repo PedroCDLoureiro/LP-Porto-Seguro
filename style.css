@@ -745,4 +745,14 @@ footer svg {
     border: none;
     padding-right: 0;
   }
+}
+@media (max-width: 400px) {
+  #trajetoria-ibdp .timeline .timeline-header div,
+  #trajetoria-ibdp .timeline .timeline-conteudo div {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  #trajetoria-ibdp .timeline .timeline-semestres {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
