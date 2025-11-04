@@ -21,7 +21,7 @@ $line-height-font-size-xlarge: 70px;
 // Geral
 
 body {
-    font-family: Calibri, "Helvetica Neue", Arial, sans-serif;
+    font-family: "Open Sans", Calibri, sans-serif;
     color: $font-color;
     font-size: $font-size-base;
     line-height: $line-height-font-size-base;
@@ -203,12 +203,14 @@ h3{
     }
     .list{
         &:first-child{
-            padding-right: 30px;
+            p{
+                padding-right: 15px;
+            }
         }
         &:last-child{
-            padding-left: 30px;
             border-left: 2px solid $secondary-color;
             p{
+                padding-left: 15px;
                 &:first-child{
                     font-size: 25px;
                     line-height: 36px;
@@ -330,7 +332,7 @@ h3{
         }
     }
     .proposito{
-        margin-top: 90px;
+        margin: 90px 0;
         h2{
             line-height: 40px;
         }
@@ -343,7 +345,7 @@ h3{
     background-color: #DDDDDD;
     padding-top: 72px;
     .container{
-        padding-bottom: 200px;
+        padding-bottom: 80px;
     }
     .faq-item {
         padding: 15px 0;
@@ -574,7 +576,7 @@ h3{
             gap: 60px;
             .col-text{
                 h3{
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                 }
                 &:first-child{
                     h3{
@@ -654,6 +656,9 @@ footer{
         font-size: $font-size-base;
         line-height: $line-height-font-size-base;
     }
+    #banner{
+        background: rgba(255, 255, 255, 0.6);
+    }
     #international-baccalaureate {
         #cards-ib{
             grid-template-columns: repeat(2, 1fr);
@@ -695,6 +700,12 @@ footer{
     }
     #possibilidades{
         padding: 80px 0;
+        .textos{
+            .colunas{
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
     }
     #localizacoes  {
         .locais{
@@ -737,11 +748,29 @@ footer{
     }
     #ibdp{
         background: 
-        linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
         url(assets/bg-ibdp.png) no-repeat center / cover;
         background-position: right;
         .texts{
             width: 100%;
+        }
+    }
+    #aprendizado-ibdp{
+        .container{
+            padding: 0 30px;
+            .list{
+                &:first-child{
+                    p{
+                        padding-right: 0;
+                    }
+                }
+                &:last-child{
+                    border: none;
+                    p{
+                        padding-left: 0;
+                    }
+                }
+            }
         }
     }
     #trajetoria-ibdp{
@@ -786,14 +815,11 @@ footer{
     }
     #faq {
         .container {
-            padding-bottom: 60px;
+            padding-bottom: 40px;
         }
     }
     #converse-com-a-equipe {
-        background: 
-        linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), 
-        url(assets/bg-forms.png) no-repeat center / cover;
-        background-position: right;
+        background: none;
         padding-bottom: 30px;
         form{
             background: none;
@@ -818,7 +844,7 @@ footer{
         }
     }
     #btn-float{
-        width: 160px;
+        width: 170px;
     }
     #obrigado{
         background-position: bottom;
