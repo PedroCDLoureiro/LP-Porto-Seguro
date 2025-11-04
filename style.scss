@@ -26,8 +26,8 @@ body {
     font-size: $font-size-base;
     line-height: $line-height-font-size-base;
 }
-.container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 90dvw;
+.container {
+    max-width: 1280px;
 }
 .container-fluid{
     padding: 0;
@@ -155,20 +155,21 @@ h3{
         height: 100dvh;
         z-index: -1;
     }
-    .container{
-        height: 100%;
-        .content-banner{
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            gap: 80px;
-            .logos{
-                gap: 60px;
-            }
-            h2{
-                font-size: 32px;
-                line-height: 32px;
-            }
+    .content-banner{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 7%;
+        gap: 80px;
+        @media (max-width: 1400px) {
+            left: 3%;
+        }
+        .logos{
+            gap: 60px;
+        }
+        h2{
+            font-size: 32px;
+            line-height: 32px;
         }
     }
 }
@@ -227,6 +228,7 @@ h3{
     background-image: url(assets/bg-trajetoria.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     .timeline{
         border: 2px solid #DDDDDD;
         border-radius: 8px;
@@ -723,8 +725,8 @@ footer{
         line-height: $line-height-font-size-small;
     }
     h1{
-        font-size: $font-size-large;
-        line-height: $line-height-font-size-large;
+        font-size: 30px;
+        line-height: 1;
     }
     .btn{
         &.btn-large{
@@ -734,10 +736,12 @@ footer{
         }
     }
     #banner {
-        .container {
-            .content-banner {
-                left: 0;
-                padding-left: 15px;
+        .content-banner {
+            left: 0;
+            padding-left: 15px;
+            h2{
+                font-size: $font-size-base;
+                line-height: $line-height-font-size-base;
             }
         }
     }
@@ -757,7 +761,6 @@ footer{
     }
     #aprendizado-ibdp{
         .container{
-            padding: 0 30px;
             .list{
                 &:first-child{
                     p{

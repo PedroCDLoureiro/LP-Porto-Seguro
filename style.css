@@ -5,8 +5,8 @@ body {
   line-height: 28px;
 }
 
-.container, .container-lg, .container-md, .container-sm, .container-xl {
-  max-width: 90dvw;
+.container {
+  max-width: 1280px;
 }
 
 .container-fluid {
@@ -149,19 +149,22 @@ h3 {
   height: 100dvh;
   z-index: -1;
 }
-#banner .container {
-  height: 100%;
-}
-#banner .container .content-banner {
+#banner .content-banner {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  left: 7%;
   gap: 80px;
 }
-#banner .container .content-banner .logos {
+@media (max-width: 1400px) {
+  #banner .content-banner {
+    left: 3%;
+  }
+}
+#banner .content-banner .logos {
   gap: 60px;
 }
-#banner .container .content-banner h2 {
+#banner .content-banner h2 {
   font-size: 32px;
   line-height: 32px;
 }
@@ -204,6 +207,7 @@ h3 {
   background-image: url(assets/bg-trajetoria.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 #trajetoria-ibdp .timeline {
   border: 2px solid #DDDDDD;
@@ -648,17 +652,21 @@ footer svg {
     line-height: 23px;
   }
   h1 {
-    font-size: 40px;
-    line-height: 56px;
+    font-size: 30px;
+    line-height: 1;
   }
   .btn.btn-large {
     font-size: 16px;
     line-height: 23px;
     padding: 8px 16px;
   }
-  #banner .container .content-banner {
+  #banner .content-banner {
     left: 0;
     padding-left: 15px;
+  }
+  #banner .content-banner h2 {
+    font-size: 20px;
+    line-height: 28px;
   }
   #international-baccalaureate #cards-ib {
     gap: 15px;
@@ -669,9 +677,6 @@ footer svg {
   }
   #ibdp .texts {
     width: 100%;
-  }
-  #aprendizado-ibdp .container {
-    padding: 0 30px;
   }
   #aprendizado-ibdp .container .list:first-child p {
     padding-right: 0;
