@@ -689,7 +689,7 @@ footer svg {
     grid-template-columns: 0.5fr 0.5fr 1fr;
   }
   #trajetoria-ibdp .timeline .timeline-header {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: auto;
     grid-template-rows: 2fr 2fr 3fr;
   }
   #trajetoria-ibdp .timeline .timeline-header div {
@@ -702,7 +702,7 @@ footer svg {
     text-align: left;
   }
   #trajetoria-ibdp .timeline .timeline-semestres {
-    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr;
   }
   #trajetoria-ibdp .timeline .timeline-semestres div {
@@ -714,7 +714,7 @@ footer svg {
     padding: 15px 10px;
   }
   #trajetoria-ibdp .timeline .timeline-conteudo {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: auto;
     grid-template-rows: 1fr 4fr 2fr;
   }
   #trajetoria-ibdp .timeline .timeline-conteudo div {

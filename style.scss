@@ -778,7 +778,7 @@ footer{
             display: grid;
             grid-template-columns: 0.5fr 0.5fr 1fr;
             .timeline-header{
-                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                grid-template-columns: auto;
                 grid-template-rows: 2fr 2fr 3fr;
                 div{
                     display: flex;
@@ -791,7 +791,7 @@ footer{
                 }
             }   
             .timeline-semestres{
-                grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+                grid-template-columns: auto;
                 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr;
                 div{
                     display: flex;
@@ -803,7 +803,7 @@ footer{
                 }
             }
             .timeline-conteudo{
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                grid-template-columns: auto;
                 grid-template-rows: 1fr 4fr 2fr;
                 div{
                     font-size: 12px;
